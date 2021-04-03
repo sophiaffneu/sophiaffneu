@@ -16,10 +16,8 @@ public class Oval extends AbstractShape {
   public IShape copyShape() {
     IShape newOval = new Oval(this.getName(), this.getPosition(), this.getColor(),
             this.shapeProperty, this.period);
-    newOval.setTransformationList(this.transformationList);
     return newOval;
   }
-
 
   @Override
   public String toString() {

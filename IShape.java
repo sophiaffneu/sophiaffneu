@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The interface of Shape.
+ * The interface represent all the functionalities a shape should have.
  */
 public interface IShape {
   /**
@@ -54,39 +54,26 @@ public interface IShape {
    */
   public void setShapeProperty(ShapeProperty shapeProperty);
 
-  TimePeriod getPeriod();
+  /**
+   * Return the change time period  of a transformation.
+   *
+   * @return the change time period  of a transformation.
+   */
+  public TimePeriod getPeriod();
+
+  /**
+   * Return the type of a shape.
+   *
+   * @return the type of a shape.
+   */
 
   ShapeType getShapeType();
+
   /**
    * make a copy of the shape
    *
    * @return a copy of the shape.
    */
-  public IShape copyShape();
 
-  /**
-   * Add a transformation to the list of transformations.
-   *
-   * @param t the transformation to be added.
-   */
-
-
-  public void addTransformations(ITransformation t);
-
-  /**
-   * Remove a transformation from the list of transformations.
-   *
-   * @param t the transformation to be removed.
-   */
-
-  public void removeTransformations(ITransformation t);
-
-  /**
-   * Return the transformation list.
-   *
-   * @return the transformation list.
-   */
-  public List<ITransformation> getTransformationList();
-
-  public void setTransformationList(List<ITransformation> transformationList);
+    public IShape copyShape();
 }

@@ -12,7 +12,6 @@ public class Rectangle extends AbstractShape {
   public IShape copyShape() {
     IShape newR = new Rectangle(this.getName(), this.getPosition(), this.getColor(),
             this.shapeProperty, this.period);
-    newR.setTransformationList(this.transformationList);
     return newR;
   }
 

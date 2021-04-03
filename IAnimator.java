@@ -43,7 +43,7 @@ public interface IAnimator {
    * @param s, the shape whose transformations are to be removed.
    */
 
-  public void removeTransformations(IShape s);
+  public void removeTransformations(ITransformation t);
 
   /**
    * Get the Hashmap of shapes and transformations.
@@ -60,5 +60,10 @@ public interface IAnimator {
    */
   public String getTransInfo();
 
+  /**
+   * Get the text description of a shape.
+   *
+   * @return a type String, the text description of a shape.
+   */
   public String getShapesInfo();
 }

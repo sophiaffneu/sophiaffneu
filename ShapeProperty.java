@@ -3,6 +3,9 @@ public class ShapeProperty {
   private double Two;
 
   public ShapeProperty(double one, double two) {
+    if(one <= 0 || two <= 0) {
+      throw new IllegalArgumentException("ShapeProperties can not be none positive value");
+    }
     this.One = one;
     this.Two = two;
   }
@@ -26,10 +29,16 @@ public class ShapeProperty {
   }
 
   public void setOne(double one) {
+    if(one <= 0) {
+      throw new IllegalArgumentException("ShapeProperties can not be none positive value");
+    }
     One = one;
   }
 
   public void setTwo(double two) {
+    if(two <= 0) {
+      throw new IllegalArgumentException("ShapeProperties can not be none positive value");
+    }
     Two = two;
   }
 }

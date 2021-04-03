@@ -10,7 +10,6 @@ public abstract class AbstractShape implements IShape {
   protected ColorRGB color;
   protected ShapeProperty shapeProperty;
   protected TimePeriod period;
-  protected List<ITransformation> transformationList;
 
   /**
    * Construct the initial AbstractShape.
@@ -19,14 +18,19 @@ public abstract class AbstractShape implements IShape {
    * @param position the position of the shape.
    * @param color    the color of the shape.
    * @param shapeProperty the shapeProperties of the shape.
+   * @param  period the showing and disappearing time range of the shape.
    */
-  public AbstractShape(String name, Point2D position, ColorRGB color, ShapeProperty shapeProperty, TimePeriod period) {
+  public AbstractShape(String name, Point2D position, ColorRGB color, ShapeProperty shapeProperty,
+                       TimePeriod period) {
+    if(name == null || position == null || color == null || shapeProperty == null || period == null)
+    {
+      throw new IllegalArgumentException("Parameters can not be null.");
+    }
     this.name = name;
     this.position = position;
     this.color = color;
     this.shapeProperty = shapeProperty;;
     this.period = period;
-    this.transformationList = new ArrayList<>();
   }
 
   @Override
@@ -40,7 +44,11 @@ public abstract class AbstractShape implements IShape {
   }
   
    @Override
-  public void setPosition(Point2D point2D) {this.position = point2D;}
+  public void setPosition(Point2D point2D) {
+    if(point2D == null) {
+      throw new IllegalArgumentException("Shape position can't be null.");
+    }
+    this.position = point2D;}
 
 
   @Override
@@ -50,6 +58,9 @@ public abstract class AbstractShape implements IShape {
   
   @Override
   public void setColor( ColorRGB color) {
+    if(color == null) {
+      throw new IllegalArgumentException("Shape color can't be null.");
+    }
     this.color = color;
   }
 
@@ -61,29 +72,13 @@ public abstract class AbstractShape implements IShape {
 
   @Override
   public void setShapeProperty(ShapeProperty shapeProperty) {
+    if(shapeProperty == null) {
+      throw new IllegalArgumentException("Shape properties can't be null.");
+    }
     this.shapeProperty = shapeProperty;
   }
 
 
   @Override
   public TimePeriod getPeriod(){ return  period;}
-
-  @Override
-  public void addTransformations(ITransformation t) {
-    transformationList.add(t);
-  }
-
-  @Override
-  public void removeTransformations(ITransformation t) {
-   transformationList.remove(t);
-  }
-
-  @Override
-  public List<ITransformation> getTransformationList() {
-    return transformationList;
-  }
-
-  public void setTransformationList(List<ITransformation> transformationList) {
-    this.transformationList = transformationList;
-  }
 }

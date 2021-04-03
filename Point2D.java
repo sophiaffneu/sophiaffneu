@@ -6,6 +6,8 @@ public class Point2D {
   private double Y;
 
   public Point2D(double x, double y) {
+    //here will throw an IlligleArgumentException of the canvas only accept positive values and
+    //negative values passed in.
     this.X = x;
     this.Y = y;
   }

@@ -14,7 +14,7 @@ public class ColorRGB {
    * @param b b value of the color
    */
   public ColorRGB(double r, double g, double b) {
-    if ((r >= 0 && r <= 1) && (g >= 0 && g <= 1) && (b >= 0 && b <= 1)) {
+    if ((r >= 0 && r <= 255) && (g >= 0 && g <= 255) && (b >= 0 && b <= 255)) {
       this.R = r;
       this.G = g;
       this.B = b;
