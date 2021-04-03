@@ -26,16 +26,16 @@ public interface IAnimator {
    *
    * @return the shape list
    */
-  public ArrayList<IShape> getShapeList();
+  public List<IShape> getShapeList();
 
   /**
-   * Add a list of transformation to of the shape to the map of transformations.
+   * Add a transformation to the list of transformations.
    *
-   * @param list the transformation list to be added.
+   * @param t the transformation to be added.
    */
 
 
-  public void addTransformations(IShape s, List<ITransformation> list);
+  public void addTransformations(ITransformation t);
 
   /**
    * Remove a shape's transformation from the map of transformations.
@@ -50,7 +50,8 @@ public interface IAnimator {
    *
    * @return the Hashmap of shapes and transformations.
    */
-  public HashMap<IShape, List<ITransformation>> getTransMap ();
+  public List<ITransformation> getTransList();
+
 
   /**
    * Get the text description of the animation.

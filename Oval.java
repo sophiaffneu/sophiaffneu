@@ -26,7 +26,7 @@ public class Oval extends AbstractShape {
         + ", Y radius: " + this.getShapeProperty().getTwo()
         + ", Color: " + this.getColor().toString() + "\n"
         +"Appears at t=" + this.getPeriod().getStart() + "\n"
-        +"Disappears at t=" + this.getPeriod().getEnd();
+        +"Disappears at t=" + this.getPeriod().getEnd() + "\n";
     return output;
   }
 }

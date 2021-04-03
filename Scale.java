@@ -24,7 +24,7 @@ public class Scale extends AbstractTransformation {
   @Override
   public String toString() {
     String output = "Shape " + transShape.getName() + " scales from ";
-    if (transShape.getClass().toString().equals("Rectangle")) {
+    if (transShape.getClass().toString().equals("class Rectangle")) {
       output += "Width: " + transShape.getShapeProperty().getOne()
           + ", Height: " + transShape.getShapeProperty().getTwo()
           + " to Width: " + newShapeProperty.getOne()

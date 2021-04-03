@@ -22,9 +22,9 @@ public class Rectangle extends AbstractShape {
         + "Type: rectangle\n"
         + "Min corner: " + this.getPosition().toString()
         + ", Width: " + this.shapeProperty.getOne() + ", Height: " + this.shapeProperty.getTwo()
-        + ", Color: " + this.getColor().toString()
+        + ", Color: " + this.getColor().toString() + "\n"
         +"Appears at t=" + this.getPeriod().getStart() + "\n"
-        +"Disappears at t=" + this.getPeriod().getEnd();
+        +"Disappears at t=" + this.getPeriod().getEnd() + "\n";
     return output;
   }
 }
