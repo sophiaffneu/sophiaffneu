@@ -4,11 +4,11 @@
 public class ChangeColor extends AbstractTransformation {
   private ColorRGB toColor;
 
-  public ChangeColor(TimePeriod timePeriod, IShape transShape, ColorRGB toColor,
+  public ChangeColor(IShape transShape, TimePeriod timePeriod, ColorRGB toColor,
                      ColorRGB fromColor) {
     super(transShape, timePeriod);
     this.toColor = toColor;
-   transShape.setColor(toColor);
+    transShape.setColor(toColor);
   }
 
   /**
@@ -17,14 +17,14 @@ public class ChangeColor extends AbstractTransformation {
    * @return the shape after transformation
    */
   public IShape transform() {
-        transShape.setColor(toColor);
-        return transShape;
-    }
+    transShape.setColor(toColor);
+    return transShape;
+  }
 
   @Override
   public String toString() {
     String output = "Shape " + transShape.getName() + " changes color from " + transShape.getColor()
-        + " to " + toColor + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
+            + " to " + toColor + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
     return output;
   }
 }
