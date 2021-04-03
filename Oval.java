@@ -7,6 +7,10 @@ public class Oval extends AbstractShape {
               TimePeriod period) {
     super(name, position, color, shapeProperty,period);
   }
+
+  public ShapeType getShapeType(){
+    return ShapeType.OVAL;
+  }
   
   @Override
   public IShape copyShape() {

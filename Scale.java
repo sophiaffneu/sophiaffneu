@@ -2,38 +2,28 @@
  * One of the class that represents Transformation. This class scales the shape.
  */
 public class Scale extends AbstractTransformation {
-  private ShapeProperty newShapeProperty;
+  private ShapeProperty fromShapeProperty;
 
-  public Scale(IShape transShape, TimePeriod timePeriod, ShapeProperty newShapeProperty,
-               ShapeProperty shapeProperty) {
+  public Scale(IShape transShape, TimePeriod timePeriod, ShapeProperty newShapeProperty) {
     super(transShape, timePeriod);
-    this.newShapeProperty = newShapeProperty;
-    transShape.setShapeProperty(shapeProperty);
+    this.fromShapeProperty = transShape.getShapeProperty();
+    transShape.setShapeProperty(newShapeProperty);
   }
 
-  /**
-   * Return the Shape after transformation.
-   *
-   * @return the shape after transformation
-   */
-  public IShape transform() {
-      transShape.setShapeProperty(newShapeProperty);
-      return transShape;
-    }
 
   @Override
   public String toString() {
     String output = "Shape " + transShape.getName() + " scales from ";
-    if (transShape.getClass().toString().equals("class Rectangle")) {
-      output += "Width: " + transShape.getShapeProperty().getOne()
-          + ", Height: " + transShape.getShapeProperty().getTwo()
-          + " to Width: " + newShapeProperty.getOne()
-          + ", Height: " + newShapeProperty.getTwo();
+    if (transShape.getShapeType() == ShapeType.RECTANGLE) {
+      output += "Width: " + fromShapeProperty.getOne()
+          + ", Height: " + fromShapeProperty.getTwo()
+          + " to Width: " + transShape.getShapeProperty().getOne()
+          + ", Height: " + transShape.getShapeProperty().getTwo();
     } else {
-      output += "X radius: " + transShape.getShapeProperty().getOne()
-          + ", Y radius: " + transShape.getShapeProperty().getTwo()
-          + " to X radius: " + newShapeProperty.getOne()
-          + ", Y radius: " + newShapeProperty.getTwo();
+      output += "X radius: " + fromShapeProperty.getOne()
+          + ", Y radius: " + fromShapeProperty.getTwo()
+          + " to X radius: " + transShape.getShapeProperty().getOne()
+          + ", Y radius: " + transShape.getShapeProperty().getTwo();
     }
 
     output += " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();

@@ -59,4 +59,6 @@ public interface IAnimator {
    * @return a type String, the text description of the animation.
    */
   public String getTransInfo();
+
+  public String getShapesInfo();
 }

@@ -3,13 +3,6 @@
  */
 public interface ITransformation {
 
-  /**
-   * Return the shape after transformation.
-   *
-   * @return the shape after transformation.
-   */
-  IShape transform();
-  
     
  /**
  * Get the shape after it is transformed.

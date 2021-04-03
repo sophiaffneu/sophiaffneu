@@ -3,4 +3,12 @@
  */
 public enum ShapeType {
   RECTANGLE, OVAL;
+  @Override
+  public String toString(){
+    if(this == RECTANGLE){
+      return "rectangle";
+    } else{
+      return "oval";
+    }
+  }
 }

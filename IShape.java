@@ -56,6 +56,7 @@ public interface IShape {
 
   TimePeriod getPeriod();
 
+  ShapeType getShapeType();
   /**
    * make a copy of the shape
    *

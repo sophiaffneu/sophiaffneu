@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -48,17 +49,24 @@ transList.remove(s);
   // @Override
 //public List<IShape> getShapeAtTick(int t) {
 
-  public String getTransInfo() {
-    List<ITransformation> sortedList = new ArrayList<>();
-    String output1 = "Shapes: \n";
+  public String getShapesInfo(){
+    String output1 = "Shapes:\n";
     for (IShape shape : shapeList) {
       output1 += shape.toString() + "\n";
     }
-    sortedList = transList.stream().sorted((t1, t2) -> Integer.compare(t1.getTimePeriod().getStart(),
-            t2.getTimePeriod().getStart())).collect(Collectors.toList());
-    for(ITransformation t : sortedList) {
-      output1 += t.toString() + "\n";
-    }
     return output1;
   }
+
+  public String getTransInfo() {
+    List<ITransformation> sortedList = new ArrayList<>();
+    String output2 = "";
+    sortedList = transList.stream().sorted((t1, t2) -> Integer.compare(t1.getTimePeriod().getStart(),
+        t2.getTimePeriod().getStart())).collect(Collectors.toList());
+    for(ITransformation t : sortedList) {
+      output2 += t.toString() + "\n";
+    }
+    return output2;
+  }
+
+
 }

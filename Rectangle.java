@@ -15,6 +15,10 @@ public class Rectangle extends AbstractShape {
     newR.setTransformationList(this.transformationList);
     return newR;
   }
+
+  public ShapeType getShapeType(){
+    return ShapeType.RECTANGLE;
+  }
   
   @Override
   public String toString() {
