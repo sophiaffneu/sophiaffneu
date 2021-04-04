@@ -9,6 +9,8 @@ public class Scale extends AbstractTransformation {
     super(transShape, timePeriod);
     this.fromShapeProperty = transShape.getShapeProperty();
     this.toShapeProperty = newShapeProperty;
+    //The whole shape has to be within the canvas after the transformation. Will check if input
+    // is valid when the canvas size info. is given in the coming assignments.
     if(newShapeProperty == null || (fromShapeProperty.getOne() == toShapeProperty.getOne() &&
             fromShapeProperty.getTwo() == toShapeProperty.getTwo())) {
       throw new IllegalArgumentException("Invalid shaper property parameter.");

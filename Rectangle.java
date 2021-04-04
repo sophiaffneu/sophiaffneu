@@ -15,6 +15,7 @@ public class Rectangle extends AbstractShape {
     return newR;
   }
 
+
   public ShapeType getShapeType(){
     return ShapeType.RECTANGLE;
   }

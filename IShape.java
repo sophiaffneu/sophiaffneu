@@ -62,6 +62,14 @@ public interface IShape {
   public TimePeriod getPeriod();
 
   /**
+   * Set the showing and disappearing time of the shape.
+   *
+   * @param t, the showing and disappearing time of the shape.
+   */
+
+  public void setPeriod(TimePeriod t);
+
+  /**
    * Return the type of a shape.
    *
    * @return the type of a shape.

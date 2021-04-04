@@ -66,4 +66,6 @@ public interface IAnimator {
    * @return a type String, the text description of a shape.
    */
   public String getShapesInfo();
+
+  //public List<IShape> getShapeAtTick();
 }

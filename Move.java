@@ -9,6 +9,9 @@ public class Move extends AbstractTransformation {
     super(transShape, timePeriod);
     this.fromPosition = transShape.getPosition();
     this.toPosition = toPosition;
+    //The the whole shape has to be within the canvas after the move.
+    // Will check if input is valid when the
+    //canvas size info. is given in the coming assignments.
     if(toPosition == null || (toPosition.getX() == fromPosition.getX() &&
             toPosition.getY() == fromPosition.getY())) {
       throw new IllegalArgumentException("Invalid toPosition parameter.");
