@@ -5,9 +5,9 @@ public interface ITransformation {
 
 
   /**
-   * Get the shape gonna be changed.
+   * Get the shape to be changed.
    *
-   * @return the shape gonna be changed
+   * @return the shape to be changed
    */
   IShape getTransShape();
 

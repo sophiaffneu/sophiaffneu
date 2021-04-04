@@ -9,8 +9,9 @@ public abstract class AbstractTransformation implements ITransformation {
   /**
    * Construct the initial AbstractTransformation.
    *
-   * @param transShape the shape that gonna be changed
-   * @param timePeriod the time period that the the shape gonna change
+   * @param transShape the shape that is to be changed.
+   *
+   * @param timePeriod the time interval of the transformation.
    */
   public AbstractTransformation(IShape transShape, TimePeriod timePeriod) {
     if (transShape == null || timePeriod == null) {

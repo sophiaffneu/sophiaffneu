@@ -1,6 +1,9 @@
 /**
- * This class represents the size of the shape.
+ * This class represents the dimensions of the shape. Our current shapes are two dimensional. For
+ * rectangles, one is width and two is height. For ovals , one is the x radius and two is the y
+ * radius.
  */
+
 public class ShapeProperty {
   private double One;
   private double Two;

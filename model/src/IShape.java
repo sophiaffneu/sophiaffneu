@@ -84,4 +84,5 @@ public interface IShape {
    */
 
   IShape copyShape();
+
 }
