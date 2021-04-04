@@ -5,11 +5,17 @@ public class TimePeriod {
   private int start;
   private int end;
 
+  /**
+   * Construct the initial time period.
+   *
+   * @param start start time
+   * @param end end time
+   */
   public TimePeriod(int start, int end) {
-    if(end > start || start < 0 || end < 0) {
+    if (end > start && start >= 0 ) {
       this.start = start;
       this.end = end;
-    }else{
+    } else {
       throw new IllegalArgumentException("invalid time period");
     }
   }

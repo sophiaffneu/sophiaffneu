@@ -24,8 +24,8 @@ public abstract class AbstractShape implements IShape {
                        TimePeriod period) {
     //The position of the shape has to be within the canvas. Will check if input is valid when the
     //canvas size info. is given in the coming assignments.
-    if (name == null || position == null || color == null || shapeProperty == null ||
-            period == null) {
+    if (name == null || position == null || color == null || shapeProperty == null
+        || period == null) {
       throw new IllegalArgumentException("Parameters can not be null.");
     }
 
@@ -33,7 +33,6 @@ public abstract class AbstractShape implements IShape {
     this.position = position;
     this.color = color;
     this.shapeProperty = shapeProperty;
-    ;
     this.period = period;
   }
 

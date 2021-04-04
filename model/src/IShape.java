@@ -22,9 +22,9 @@ public interface IShape {
   /**
    * Set the position of the shape.
    *
-   * @param point2D, the new position of the shape.
+   * @param point2D the new position of the shape
    */
-  public void setPosition(Point2D point2D);
+  void setPosition(Point2D point2D);
 
   /**
    * Return the color of the shape.
@@ -36,52 +36,52 @@ public interface IShape {
   /**
    * Set the color of the shape.
    *
-   * @param color, the new color of the shape.
+   * @param color the new color of the shape
    */
-  public void setColor(ColorRGB color);
+  void setColor(ColorRGB color);
 
   /**
    * Return the shape properties of the shape.
    *
-   * @return the  shape properties of the shape.
+   * @return the  shape properties of the shape
    */
-  public ShapeProperty getShapeProperty();
+  ShapeProperty getShapeProperty();
 
   /**
    * Set the shape properties of the shape.
    *
-   * @param shapeProperty, the new shape properties of the shape.
+   * @param shapeProperty the new shape properties of the shape
    */
-  public void setShapeProperty(ShapeProperty shapeProperty);
+  void setShapeProperty(ShapeProperty shapeProperty);
 
   /**
    * Return the change time period  of a transformation.
    *
-   * @return the change time period  of a transformation.
+   * @return the change time period  of a transformation
    */
-  public TimePeriod getPeriod();
+  TimePeriod getPeriod();
 
   /**
    * Set the showing and disappearing time of the shape.
    *
-   * @param t, the showing and disappearing time of the shape.
+   * @param t the showing and disappearing time of the shape
    */
 
-  public void setPeriod(TimePeriod t);
+  void setPeriod(TimePeriod t);
 
   /**
    * Return the type of a shape.
    *
-   * @return the type of a shape.
+   * @return the type of a shape
    */
 
   ShapeType getShapeType();
 
   /**
-   * make a copy of the shape
+   * Return a copy of the shape.
    *
-   * @return a copy of the shape.
+   * @return a copy of the shape
    */
 
-    public IShape copyShape();
+  IShape copyShape();
 }

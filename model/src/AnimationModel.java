@@ -18,11 +18,12 @@ public class AnimationModel implements IAnimator {
     this.transList = new ArrayList<>();
   }
 
+  @Override
   public void addShape(IShape shape) {
     if (shape == null) {
       throw new IllegalArgumentException("Shape can't be null.");
     }
-    shapeList.add(shape);
+    shapeList.add(shape.copyShape());
   }
 
   @Override
@@ -36,6 +37,7 @@ public class AnimationModel implements IAnimator {
     shapeList.remove(shape);
   }
 
+  @Override
   public List<IShape> getShapeList() {
     return shapeList;
   }
@@ -50,13 +52,13 @@ public class AnimationModel implements IAnimator {
     // count is the number of existing transformations in the list has the same type as t and the
     //time periods overlap.
 
-    long count = transList.stream().filter(l -> l.getTransShape() == t.getTransShape() &&
-            l.getTransType() == t.getTransType() &&
-            l.getTimePeriod().getStart() <= t.getTimePeriod().getStart() &&
-            l.getTimePeriod().getEnd() >= t.getTimePeriod().getStart()).count();
+    long count = transList.stream().filter(l -> l.getTransShape() == t.getTransShape()
+        && l.getTransType() == t.getTransType()
+        && l.getTimePeriod().getStart() <= t.getTimePeriod().getStart()
+        && l.getTimePeriod().getEnd() >= t.getTimePeriod().getStart()).count();
     if (count != 0) {
-      throw new IllegalArgumentException("Same type of transformation with overlapping time" +
-              "period already exist.");
+      throw new IllegalArgumentException("Same type of transformation with overlapping time"
+          + "period already exist.");
     }
     transList.add(t);
   }
@@ -79,8 +81,9 @@ public class AnimationModel implements IAnimator {
   }
 
   // @Override
-//public List<IShape> getShapeAtTick(int t) {
+  //public List<IShape> getShapeAtTick(int t) {
 
+  @Override
   public String getShapesInfo() {
     String output1 = "Shapes:\n";
     for (IShape shape : shapeList) {
@@ -89,11 +92,12 @@ public class AnimationModel implements IAnimator {
     return output1;
   }
 
+  @Override
   public String getTransInfo() {
-    List<ITransformation> sortedList = new ArrayList<>();
+    List<ITransformation> sortedList;
     String output2 = "";
-    sortedList = transList.stream().sorted((t1, t2) -> Integer.compare(t1.getTimePeriod().getStart(),
-            t2.getTimePeriod().getStart())).collect(Collectors.toList());
+    sortedList = transList.stream().sorted(Comparator.comparingInt(t ->
+        t.getTimePeriod().getStart())).collect(Collectors.toList());
     for (ITransformation t : sortedList) {
       output2 += t.toString() + "\n";
     }

@@ -2,22 +2,26 @@
  * This class represents a position of a point.
  */
 public class Point2D {
-  private double X;
-  private double Y;
+  private double x;
+  private double y;
 
+  /**
+   * Construct the initial Point2D.
+   *
+   * @param x x of the position
+   * @param y y of the position
+   */
   public Point2D(double x, double y) {
-    //here will throw an IlligleArgumentException of the canvas only accept positive values and
-    //negative values passed in.
-    this.X = x;
-    this.Y = y;
+    this.x = x;
+    this.y = y;
   }
 
   public double getX() {
-    return X;
+    return x;
   }
 
   public double getY() {
-    return Y;
+    return y;
   }
 
   @Override

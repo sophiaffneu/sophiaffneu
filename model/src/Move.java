@@ -5,6 +5,13 @@ public class Move extends AbstractTransformation {
   private Point2D fromPosition;
   private Point2D toPosition;
 
+  /**
+   * Construct the move transformation.
+   *
+   * @param transShape the shape gonna be changed
+   * @param timePeriod change period
+   * @param toPosition new position
+   */
   public Move(IShape transShape, TimePeriod timePeriod, Point2D toPosition) {
     super(transShape, timePeriod);
     this.fromPosition = transShape.getPosition();
@@ -12,8 +19,8 @@ public class Move extends AbstractTransformation {
     //The the whole shape has to be within the canvas after the move.
     // Will check if input is valid when the
     //canvas size info. is given in the coming assignments.
-    if(toPosition == null || (toPosition.getX() == fromPosition.getX() &&
-            toPosition.getY() == fromPosition.getY())) {
+    if (toPosition == null || (toPosition.getX() == fromPosition.getX()
+        && toPosition.getY() == fromPosition.getY())) {
       throw new IllegalArgumentException("Invalid toPosition parameter.");
     }
     transShape.setPosition(toPosition);

@@ -2,9 +2,9 @@
  * This class represents rgb information.
  */
 public class ColorRGB {
-  private double R;
-  private double G;
-  private double B;
+  private double r;
+  private double g;
+  private double b;
 
   /**
    * Construct the initial color.
@@ -14,25 +14,25 @@ public class ColorRGB {
    * @param b b value of the color
    */
   public ColorRGB(double r, double g, double b) {
-    if ((r >= 0 && r <= 255) && (g >= 0 && g <= 255) && (b >= 0 && b <= 255)) {
-      this.R = r;
-      this.G = g;
-      this.B = b;
+    if ((r >= 0 && r <= 1) && (g >= 0 && g <= 1) && (b >= 0 && b <= 1)) {
+      this.r = r;
+      this.g = g;
+      this.b = b;
     } else {
       throw new IllegalArgumentException("invalid rgb");
     }
   }
 
   public double getR() {
-    return R;
+    return r;
   }
 
   public double getG() {
-    return G;
+    return g;
   }
 
   public double getB() {
-    return B;
+    return b;
   }
 
   @Override
