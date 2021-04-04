@@ -38,4 +38,14 @@ public class ShapePropertyTest {
   public void testIllegalSize3(){
     ShapeProperty s3 = new ShapeProperty(-50,-100);
   }
+
+  @Test(expected = IllegalArgumentException.class)
+  public void testIllegalSize4(){
+    ShapeProperty s3 = new ShapeProperty(0,100);
+  }
+
+  @Test(expected = IllegalArgumentException.class)
+  public void testIllegalSize5(){
+    ShapeProperty s3 = new ShapeProperty(50,0);
+  }
 }

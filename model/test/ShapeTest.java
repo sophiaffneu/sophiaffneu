@@ -95,5 +95,11 @@ public class ShapeTest {
     assertEquals(copy.getPeriod().getStart(),r1.getPeriod().getStart());
     assertEquals(copy.getPeriod().getEnd(),r1.getPeriod().getEnd());
   }
+
+  @Test
+  public void testEquals() {
+    IShape copy = r1.copyShape();
+    assertTrue(copy.equals(r1));
+  }
 }
 
