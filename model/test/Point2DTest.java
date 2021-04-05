@@ -10,18 +10,18 @@ public class Point2DTest {
   private Point2D p1;
 
   @Before
-  public void setup(){
-    p1 = new Point2D(200,200);
+  public void setup() {
+    p1 = new Point2D(200, 200);
   }
 
   @Test
-  public void testGetX(){
-    assertEquals(200,p1.getX(),0.01);
+  public void testGetX() {
+    assertEquals(200, p1.getX(), 0.01);
   }
 
   @Test
-  public void testGetY(){
-    assertEquals(200,p1.getY(),0.01);
+  public void testGetY() {
+    assertEquals(200, p1.getY(), 0.01);
   }
 
 

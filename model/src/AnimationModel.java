@@ -23,7 +23,7 @@ public class AnimationModel implements IAnimator {
     if (shape == null) {
       throw new IllegalArgumentException("Shape can't be null.");
     }
-    if(shapeList.contains(shape)) {
+    if (shapeList.contains(shape)) {
       throw new IllegalArgumentException("Shape already exist in list.");
     }
     shapeList.add(shape);
@@ -56,12 +56,12 @@ public class AnimationModel implements IAnimator {
     //time periods overlap.
 
     long count = transList.stream().filter(l -> l.getTransShape() == t.getTransShape()
-            && l.getTransType() == t.getTransType()
-            && l.getTimePeriod().getStart() <= t.getTimePeriod().getStart()
-            && l.getTimePeriod().getEnd() >= t.getTimePeriod().getStart()).count();
+        && l.getTransType() == t.getTransType()
+        && l.getTimePeriod().getStart() <= t.getTimePeriod().getStart()
+        && l.getTimePeriod().getEnd() >= t.getTimePeriod().getStart()).count();
     if (count != 0) {
       throw new IllegalArgumentException("Same type of transformation with overlapping time "
-              + "period already exist.");
+          + "period already exist.");
     }
     transList.add(t);
   }
@@ -100,7 +100,7 @@ public class AnimationModel implements IAnimator {
     List<ITransformation> sortedList;
     String output2 = "";
     sortedList = transList.stream().sorted(Comparator.comparingInt(t ->
-            t.getTimePeriod().getStart())).collect(Collectors.toList());
+        t.getTimePeriod().getStart())).collect(Collectors.toList());
     for (ITransformation t : sortedList) {
       output2 += t.toString() + "\n";
     }

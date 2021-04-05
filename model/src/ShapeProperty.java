@@ -5,8 +5,8 @@
  */
 
 public class ShapeProperty {
-  private double One;
-  private double Two;
+  private double one;
+  private double two;
 
   /**
    * Construct the initial shape property.
@@ -18,8 +18,8 @@ public class ShapeProperty {
     if (one <= 0 || two <= 0) {
       throw new IllegalArgumentException("ShapeProperties can not be none positive value");
     }
-    this.One = one;
-    this.Two = two;
+    this.one = one;
+    this.two = two;
   }
 
   /**
@@ -28,7 +28,7 @@ public class ShapeProperty {
    * @return the first one.
    */
   public double getOne() {
-    return One;
+    return one;
   }
 
   /**
@@ -37,7 +37,7 @@ public class ShapeProperty {
    * @return the second one.
    */
   public double getTwo() {
-    return Two;
+    return two;
   }
 
 }

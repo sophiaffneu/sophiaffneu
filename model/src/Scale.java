@@ -8,8 +8,8 @@ public class Scale extends AbstractTransformation {
   /**
    * Construct the scale transformation.
    *
-   * @param transShape the shape gonna be changed
-   * @param timePeriod the period of the transformation
+   * @param transShape       the shape gonna be changed
+   * @param timePeriod       the period of the transformation
    * @param newShapeProperty the new shapePeoperty
    */
   public Scale(IShape transShape, TimePeriod timePeriod, ShapeProperty newShapeProperty) {
@@ -39,7 +39,6 @@ public class Scale extends AbstractTransformation {
           + ", Y radius: " + fromShapeProperty.getTwo()
           + " to X radius: " + toShapeProperty.getOne()
           + ", Y radius: " + toShapeProperty.getTwo();
-      ;
     }
 
     output += " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();

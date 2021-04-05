@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * The interface represent all the functionalities a shape should have.
  */
