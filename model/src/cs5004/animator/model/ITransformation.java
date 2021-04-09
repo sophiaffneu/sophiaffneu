@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * The interface for transformation.
  */

@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * One of the class that represent shape. This class represents oval.
  */
@@ -31,14 +33,11 @@ public class Oval extends AbstractShape {
 
   @Override
   public String toString() {
-    String output = "Name: " + this.getName() + "\n"
-        + "Type: " + this.getShapeType() + "\n"
-        + "Center: " + this.getPosition().toString()
-        + ", X radius: " + this.getShapeProperty().getOne()
-        + ", Y radius: " + this.getShapeProperty().getTwo()
-        + ", Color: " + this.getColor().toString() + "\n"
-        + "Appears at t=" + this.getPeriod().getStart() + "\n"
-        + "Disappears at t=" + this.getPeriod().getEnd() + "\n";
+    String output = "Create " + this.getColor() + " " + this.getShapeType() + " "
+        + this.getName() + " with center at "
+        + this.getPosition().toString()
+        + ", radius " + this.getShapeProperty().getOne()
+        + " and " + this.getShapeProperty().getTwo();
     return output;
   }
 }

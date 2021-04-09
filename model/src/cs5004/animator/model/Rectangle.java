@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * One of the class that represents a shape. This class represents rectangle.
  */
@@ -31,13 +33,11 @@ public class Rectangle extends AbstractShape {
 
   @Override
   public String toString() {
-    String output = "Name: " + this.getName() + "\n"
-        + "Type: " + this.getShapeType() + "\n"
-        + "Min corner: " + this.getPosition().toString()
-        + ", Width: " + this.shapeProperty.getOne() + ", Height: " + this.shapeProperty.getTwo()
-        + ", Color: " + this.getColor().toString() + "\n"
-        + "Appears at t=" + this.getPeriod().getStart() + "\n"
-        + "Disappears at t=" + this.getPeriod().getEnd() + "\n";
+    String output = "Create " + this.getColor() + " " + this.getShapeType() + " " + this.getName()
+        + " with corner at "
+        + this.getPosition().toString()
+        + ", width " + this.getShapeProperty().getOne()
+        + " and height " + this.getShapeProperty().getTwo();
     return output;
   }
 }

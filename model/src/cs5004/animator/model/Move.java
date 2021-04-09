@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * One of the class that represents Transformation. This class moves the shape.
  */
@@ -28,7 +30,7 @@ public class Move extends AbstractTransformation {
 
   @Override
   public String toString() {
-    String output = "Shape " + transShape.getName() + " moves from " + fromPosition
+    String output = transShape.getName() + " moves from " + fromPosition
         + " to " + toPosition + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
     return output;
   }

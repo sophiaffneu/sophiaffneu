@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 import java.util.List;
 
 /**
@@ -51,20 +53,5 @@ public interface IAnimator {
   List<ITransformation> getTransList();
 
 
-  /**
-   * Get the text description of the animation.
-   *
-   * @return a type String, the text description of the animation
-   */
-  String getTransInfo();
-
-  /**
-   * Get the text description of a shape.
-   *
-   * @return a type String, the text description of a shape
-   */
-
-  String getShapesInfo();
-
-  // List<IShape> getShapeAtTick();
+  // List<cs5004.animator.model.IShape> getShapeAtTick();
 }

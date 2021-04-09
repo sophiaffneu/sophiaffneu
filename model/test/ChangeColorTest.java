@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
-
+import cs5004.animator.model.*;
 /**
  * A JUnit test for changeColor class.
  */

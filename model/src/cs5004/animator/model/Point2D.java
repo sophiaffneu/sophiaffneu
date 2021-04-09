@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * This class represents a position of a point.
  */
@@ -6,7 +8,7 @@ public class Point2D {
   private double y;
 
   /**
-   * Construct the initial Point2D.
+   * Construct the initial cs5004.animator.model.Point2D.
    *
    * @param x x of the position
    * @param y y of the position

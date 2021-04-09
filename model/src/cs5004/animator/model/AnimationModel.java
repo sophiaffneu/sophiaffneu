@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -84,26 +86,6 @@ public class AnimationModel implements IAnimator {
   }
 
   // @Override
-  //public List<IShape> getShapeAtTick(int t) {
+  //public List<cs5004.animator.model.IShape> getShapeAtTick(int t) {
 
-  @Override
-  public String getShapesInfo() {
-    String output1 = "Shapes:\n";
-    for (IShape shape : shapeList) {
-      output1 += shape.toString() + "\n";
-    }
-    return output1;
-  }
-
-  @Override
-  public String getTransInfo() {
-    List<ITransformation> sortedList;
-    String output2 = "";
-    sortedList = transList.stream().sorted(Comparator.comparingInt(t ->
-        t.getTimePeriod().getStart())).collect(Collectors.toList());
-    for (ITransformation t : sortedList) {
-      output2 += t.toString() + "\n";
-    }
-    return output2;
-  }
 }

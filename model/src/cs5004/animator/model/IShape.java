@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * The interface represent all the functionalities a shape should have.
  */
@@ -82,4 +84,5 @@ public interface IShape {
 
   IShape copyShape();
 
+  String getPeriodInfo();
 }

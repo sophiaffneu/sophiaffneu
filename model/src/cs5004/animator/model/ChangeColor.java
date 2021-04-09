@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * One of the class that represents Transformation. This class changes the color of the shape.
  */
@@ -25,7 +27,7 @@ public class ChangeColor extends AbstractTransformation {
 
   @Override
   public String toString() {
-    String output = "Shape " + transShape.getName() + " changes color from " + fromColor
+    String output = transShape.getName() + " changes from " + fromColor
         + " to " + toColor + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
     return output;
   }

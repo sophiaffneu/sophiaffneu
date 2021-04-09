@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * This class represents the time period of a shape.
  */

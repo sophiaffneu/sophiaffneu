@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * An abstract transformation class.
  */
@@ -7,7 +9,7 @@ public abstract class AbstractTransformation implements ITransformation {
   protected TimePeriod timePeriod;
 
   /**
-   * Construct the initial AbstractTransformation.
+   * Construct the initial cs5004.animator.model.AbstractTransformation.
    *
    * @param transShape the shape that is to be changed.
    *

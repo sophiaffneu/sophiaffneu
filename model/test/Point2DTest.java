@@ -2,9 +2,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
+import cs5004.animator.model.*;
 /**
- * A Junit test for Point2D.
+ * A Junit test for cs5004.animator.model.Point2D.
  */
 public class Point2DTest {
   private Point2D p1;

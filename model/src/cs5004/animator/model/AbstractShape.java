@@ -1,3 +1,5 @@
+package cs5004.animator.model;
+
 /**
  * An abstract shape class.
  */
@@ -9,7 +11,7 @@ public abstract class AbstractShape implements IShape {
   protected TimePeriod period;
 
   /**
-   * Construct the initial AbstractShape.
+   * Construct the initial cs5004.animator.model.AbstractShape.
    *
    * @param name          the name of the shape.
    * @param position      the position of the shape.
@@ -90,4 +92,10 @@ public abstract class AbstractShape implements IShape {
     this.period = t;
   }
 
+  @Override
+  public String getPeriodInfo(){
+    String output = getName() + " appears at time t=" + getPeriod().getStart()
+        + " and disappears at time t=" + getPeriod().getEnd();
+    return output;
+  }
 }
