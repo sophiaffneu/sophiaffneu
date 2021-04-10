@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.awt.*;
+
 /**
  * One of the class that represent shape. This class represents oval.
  */
@@ -14,7 +16,7 @@ public class Oval extends AbstractShape {
    * @param shapeProperty the shapeProperty of the shape
    * @param period        the time period of the shape
    */
-  public Oval(String name, Point2D position, ColorRGB color, ShapeProperty shapeProperty,
+  public Oval(String name, Point2D position, Color color, ShapeProperty shapeProperty,
               TimePeriod period) {
     super(name, position, color, shapeProperty, period);
   }
@@ -33,7 +35,10 @@ public class Oval extends AbstractShape {
 
   @Override
   public String toString() {
-    String output = "Create " + this.getColor() + " " + this.getShapeType() + " "
+    String output = "Create (" + this.getColor().getRed()
+        + "," + this.getColor().getGreen()
+        + "," + this.getColor().getBlue() + ") "
+        + this.getShapeType() + " "
         + this.getName() + " with center at "
         + this.getPosition().toString()
         + ", radius " + this.getShapeProperty().getOne()

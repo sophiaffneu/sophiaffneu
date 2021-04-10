@@ -1,11 +1,13 @@
 package cs5004.animator.model;
 
+import java.awt.*;
+
 /**
  * One of the class that represents Transformation. This class changes the color of the shape.
  */
 public class ChangeColor extends AbstractTransformation {
-  private ColorRGB fromColor;
-  private ColorRGB toColor;
+  private Color fromColor;
+  private Color toColor;
 
   /**
    * Construct the change color transformation.
@@ -14,12 +16,13 @@ public class ChangeColor extends AbstractTransformation {
    * @param timePeriod changing period
    * @param toColor    new color
    */
-  public ChangeColor(IShape transShape, TimePeriod timePeriod, ColorRGB toColor) {
+  public ChangeColor(IShape transShape, TimePeriod timePeriod, Color toColor) {
     super(transShape, timePeriod);
     this.fromColor = transShape.getColor();
     this.toColor = toColor;
-    if (toColor == null || (toColor.getR() == fromColor.getR() && toColor.getB() == fromColor.getB()
-        && toColor.getG() == fromColor.getG())) {
+    if (toColor == null || (toColor.getRed() == fromColor.getRed()
+        && toColor.getBlue() == fromColor.getBlue()
+        && toColor.getGreen() == fromColor.getGreen())) {
       throw new IllegalArgumentException("Invalid color parameter.");
     }
     transShape.setColor(toColor);
@@ -27,8 +30,8 @@ public class ChangeColor extends AbstractTransformation {
 
   @Override
   public String toString() {
-    String output = transShape.getName() + " changes from " + fromColor
-        + " to " + toColor + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
+    String output = transShape.getName() + " changes from (" + fromColor.getRed() + "," + fromColor.getGreen() + "," + fromColor.getBlue() +") "
+        + " to (" + toColor.getRed() +"," + toColor.getGreen() +"," + toColor.getBlue() +")" + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
     return output;
   }
 

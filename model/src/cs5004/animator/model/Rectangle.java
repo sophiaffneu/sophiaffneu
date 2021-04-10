@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.awt.*;
+
 /**
  * One of the class that represents a shape. This class represents rectangle.
  */
@@ -14,7 +16,7 @@ public class Rectangle extends AbstractShape {
    * @param shapeProperty the shapeProperty of the shape
    * @param period        the period of the shape
    */
-  public Rectangle(String name, Point2D position, ColorRGB color, ShapeProperty shapeProperty,
+  public Rectangle(String name, Point2D position, Color color, ShapeProperty shapeProperty,
                    TimePeriod period) {
     super(name, position, color, shapeProperty, period);
   }
@@ -33,7 +35,10 @@ public class Rectangle extends AbstractShape {
 
   @Override
   public String toString() {
-    String output = "Create " + this.getColor() + " " + this.getShapeType() + " " + this.getName()
+    String output = "Create (" + this.getColor().getRed() + ","
+        + this.getColor().getGreen() + ","
+        + this.getColor().getBlue() + ") "
+        + this.getShapeType() + " " + this.getName()
         + " with corner at "
         + this.getPosition().toString()
         + ", width " + this.getShapeProperty().getOne()

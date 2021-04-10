@@ -1,10 +1,12 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.awt.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import cs5004.animator.model.*;
+import cs5004.animator.model.Rectangle;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -25,11 +27,11 @@ public class AnimationModelTest {
   @Before
   public void setup() {
     model = new AnimationModel();
-    r = new Rectangle("R", new Point2D(200.0, 200.0),
-        new ColorRGB(1.0, 0.0, 0.0), new ShapeProperty(50, 100),
+    r = new Rectangle("R", new Point2D(200, 200),
+        new Color(1, 0, 0), new ShapeProperty(50, 100),
         new TimePeriod(1, 100));
-    c = new Oval("C", new Point2D(500.0, 100.0),
-        new ColorRGB(0.0, 0.0, 1.0), new ShapeProperty(60, 30),
+    c = new Oval("C", new Point2D(500, 100),
+        new Color(0, 0, 1), new ShapeProperty(60, 30),
         new TimePeriod(6, 100));
 
     copyR = r.copyShape();
@@ -83,25 +85,25 @@ public class AnimationModelTest {
   @Test
   public void testTransListOperations() {
     ITransformation moveR = new Move(copyR, new TimePeriod(10, 50),
-        new Point2D(300.0, 300.0));
+        new Point2D(300, 300));
 
     ITransformation moveR1 = new Move(copyR, new TimePeriod(51, 69),
-        new Point2D(200.0, 200.0));
+        new Point2D(200, 200));
 
     ITransformation moveR2 = new Move(copyR, new TimePeriod(20, 30),
-        new Point2D(100.0, 100.0));
+        new Point2D(100, 100));
 
     ITransformation scaleR = new Scale(copyR, new TimePeriod(51, 70),
-        new ShapeProperty(25.0, 100.0));
+        new ShapeProperty(25, 100));
 
     ITransformation moveC = new Move(copyC, new TimePeriod(20, 70),
-        new Point2D(500.0, 400.0));
+        new Point2D(500, 400));
 
     ITransformation changeColorC = new ChangeColor(copyC, new TimePeriod(50, 80),
-        new ColorRGB(0.0, 1.0, 0.0));
+        new Color(0, 1, 0));
 
     ITransformation changeColorC1 = new ChangeColor(copyC, new TimePeriod(50, 80),
-        new ColorRGB(0.0, 1.0, 1.0));
+        new Color(0, 1, 1));
 
     model.addTransformations(moveR);
     assertTrue(model.getTransList().contains(moveR));

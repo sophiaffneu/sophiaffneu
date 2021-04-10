@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.awt.*;
+
 /**
  * The interface represent all the functionalities a shape should have.
  */
@@ -30,14 +32,14 @@ public interface IShape {
    *
    * @return the color of the shape
    */
-  ColorRGB getColor();
+  Color getColor();
 
   /**
    * Set the color of the shape.
    *
    * @param color the new color of the shape
    */
-  void setColor(ColorRGB color);
+  void setColor(Color color);
 
   /**
    * Return the shape properties of the shape.

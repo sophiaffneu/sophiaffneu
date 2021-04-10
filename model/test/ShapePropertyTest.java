@@ -16,12 +16,12 @@ public class ShapePropertyTest {
 
   @Test
   public void testGetOne() {
-    assertEquals(50, s1.getOne(), 0.01);
+    assertEquals(50, s1.getOne());
   }
 
   @Test
   public void testGetTwo() {
-    assertEquals(80, s1.getTwo(), 0.01);
+    assertEquals(80, s1.getTwo());
   }
 
   @Test(expected = IllegalArgumentException.class)

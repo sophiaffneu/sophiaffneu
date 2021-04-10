@@ -7,8 +7,8 @@ package cs5004.animator.model;
  */
 
 public class ShapeProperty {
-  private double one;
-  private double two;
+  private int one;
+  private int two;
 
   /**
    * Construct the initial shape property.
@@ -16,7 +16,7 @@ public class ShapeProperty {
    * @param one width or x radius
    * @param two height or y radius
    */
-  public ShapeProperty(double one, double two) {
+  public ShapeProperty(int one, int two) {
     if (one <= 0 || two <= 0) {
       throw new IllegalArgumentException("ShapeProperties can not be none positive value");
     }
@@ -29,7 +29,7 @@ public class ShapeProperty {
    *
    * @return the first one.
    */
-  public double getOne() {
+  public int getOne() {
     return one;
   }
 
@@ -38,7 +38,7 @@ public class ShapeProperty {
    *
    * @return the second one.
    */
-  public double getTwo() {
+  public int getTwo() {
     return two;
   }
 

@@ -1,9 +1,13 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.awt.*;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import cs5004.animator.model.*;
+import cs5004.animator.model.Rectangle;
+
 /**
  * A JUnit test for move class.
  */
@@ -15,11 +19,11 @@ public class MoveTest {
 
   @Before
   public void setup() {
-    r = new Rectangle("R", new Point2D(200.0, 200.0),
-        new ColorRGB(1.0, 0.0, 0.0), new ShapeProperty(50, 100),
+    r = new Rectangle("R", new Point2D(200, 200),
+        new Color(1, 0, 0), new ShapeProperty(50, 100),
         new TimePeriod(1, 100));
-    IShape c = new Oval("C", new Point2D(500.0, 100.0),
-        new ColorRGB(0.0, 0.0, 1.0), new ShapeProperty(60, 30),
+    IShape c = new Oval("C", new Point2D(500, 100),
+        new Color(0, 0, 1), new ShapeProperty(60, 30),
         new TimePeriod(6, 100));
     m1 = new Move(r.copyShape(), new TimePeriod(10, 50), new Point2D(300, 300));
     m2 = new Move(c.copyShape(), new TimePeriod(20, 70), new Point2D(500, 400));
@@ -35,30 +39,30 @@ public class MoveTest {
   @Test
   public void testGetTransShape() {
     assertEquals("R", m1.getTransShape().getName());
-    assertEquals(300, m1.getTransShape().getPosition().getX(), 0.01);
-    assertEquals(300, m1.getTransShape().getPosition().getY(), 0.01);
+    assertEquals(300, m1.getTransShape().getPosition().getX());
+    assertEquals(300, m1.getTransShape().getPosition().getY());
 
-    assertEquals(1.0, m1.getTransShape().getColor().getR(), 0.01);
-    assertEquals(0, m1.getTransShape().getColor().getG(), 0.01);
-    assertEquals(0, m1.getTransShape().getColor().getB(), 0.01);
+    assertEquals(1.0, m1.getTransShape().getColor().getRed(), 0.01);
+    assertEquals(0, m1.getTransShape().getColor().getGreen(), 0.01);
+    assertEquals(0, m1.getTransShape().getColor().getBlue(), 0.01);
 
-    assertEquals(50, m1.getTransShape().getShapeProperty().getOne(), 0.01);
-    assertEquals(100, m1.getTransShape().getShapeProperty().getTwo(), 0.01);
+    assertEquals(50, m1.getTransShape().getShapeProperty().getOne());
+    assertEquals(100, m1.getTransShape().getShapeProperty().getTwo());
 
     assertEquals(1, m1.getTransShape().getPeriod().getStart());
     assertEquals(100, m1.getTransShape().getPeriod().getEnd());
 
 
     assertEquals("C", m2.getTransShape().getName());
-    assertEquals(500, m2.getTransShape().getPosition().getX(), 0.01);
-    assertEquals(400, m2.getTransShape().getPosition().getY(), 0.01);
+    assertEquals(500, m2.getTransShape().getPosition().getX());
+    assertEquals(400, m2.getTransShape().getPosition().getY());
 
-    assertEquals(0, m2.getTransShape().getColor().getR(), 0.01);
-    assertEquals(0, m2.getTransShape().getColor().getG(), 0.01);
-    assertEquals(1, m2.getTransShape().getColor().getB(), 0.01);
+    assertEquals(0, m2.getTransShape().getColor().getRed(), 0.01);
+    assertEquals(0, m2.getTransShape().getColor().getGreen(), 0.01);
+    assertEquals(1, m2.getTransShape().getColor().getBlue(), 0.01);
 
-    assertEquals(60, m2.getTransShape().getShapeProperty().getOne(), 0.01);
-    assertEquals(30, m2.getTransShape().getShapeProperty().getTwo(), 0.01);
+    assertEquals(60, m2.getTransShape().getShapeProperty().getOne());
+    assertEquals(30, m2.getTransShape().getShapeProperty().getTwo());
 
     assertEquals(6, m2.getTransShape().getPeriod().getStart());
     assertEquals(100, m2.getTransShape().getPeriod().getEnd());
@@ -108,7 +112,7 @@ public class MoveTest {
   @Test
   public void testIllegalMove4() {
     try {
-      illegalM = new Move(r.copyShape(), new TimePeriod(10, 50), new Point2D(200.0, 200.0));
+      illegalM = new Move(r.copyShape(), new TimePeriod(10, 50), new Point2D(200, 200));
       fail("Invalid input should have thrown exception.");
     } catch (IllegalArgumentException e) {
       assertEquals("Invalid toPosition parameter.", e.getMessage());

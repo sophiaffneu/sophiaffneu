@@ -16,17 +16,17 @@ public class Point2DTest {
 
   @Test
   public void testGetX() {
-    assertEquals(200, p1.getX(), 0.01);
+    assertEquals(200, p1.getX());
   }
 
   @Test
   public void testGetY() {
-    assertEquals(200, p1.getY(), 0.01);
+    assertEquals(200, p1.getY());
   }
 
 
   @Test
   public void testPointString() {
-    assertEquals("(200.0,200.0)", p1.toString());
+    assertEquals("(200,200)", p1.toString());
   }
 }
