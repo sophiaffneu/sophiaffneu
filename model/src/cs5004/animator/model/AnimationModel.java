@@ -11,7 +11,10 @@ import java.util.stream.Collectors;
 public class AnimationModel implements IAnimator {
   private List<IShape> shapeList;
   private List<ITransformation> transList;
-  private Canvas canvas;
+  private  int x;
+  private  int y;
+  private  int width;
+  private  int height;
 
   /**
    * Construct an animation model.
@@ -23,7 +26,13 @@ public class AnimationModel implements IAnimator {
 
   @Override
   public IAnimator setBounds(int x, int y, int width, int height) {
-    canvas = new Canvas(x, y, width, height);
+    if (width < 0 || height < 0) {
+      throw new IllegalArgumentException("cannot have a negative width or height");
+    }
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
     return this;
   }
 

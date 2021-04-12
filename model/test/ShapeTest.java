@@ -18,10 +18,10 @@ public class ShapeTest {
   @Before
   public void setup() {
     r1 = new Rectangle("R", new Point2D(200, 200), new Color(1, 0, 0),
-        new ShapeProperty(50, 100), new TimePeriod(1, 100));
+        new ShapeProperty(50, 100));
 
     o1 = new Oval("C", new Point2D(500, 100), new Color(0, 0, 1),
-        new ShapeProperty(60, 30), new TimePeriod(6, 100));
+        new ShapeProperty(60, 30));
   }
 
   @Test
@@ -67,15 +67,6 @@ public class ShapeTest {
   }
 
   @Test
-  public void testTimePeriod() {
-    assertEquals(1, r1.getPeriod().getStart());
-    assertEquals(100, r1.getPeriod().getEnd());
-    r1.setPeriod(new TimePeriod(43, 52));
-    assertEquals(43, r1.getPeriod().getStart());
-    assertEquals(52, r1.getPeriod().getEnd());
-  }
-
-  @Test
   public void testGetShapeType() {
     assertEquals(ShapeType.RECTANGLE, r1.getShapeType());
     assertEquals(ShapeType.OVAL, o1.getShapeType());
@@ -91,8 +82,6 @@ public class ShapeTest {
     assertEquals(copy.getColor().getGreen(), r1.getColor().getGreen(), 0.01);
     assertEquals(copy.getColor().getBlue(), r1.getColor().getBlue(), 0.01);
     assertEquals(copy.getShapeType(), r1.getShapeType());
-    assertEquals(copy.getPeriod().getStart(), r1.getPeriod().getStart());
-    assertEquals(copy.getPeriod().getEnd(), r1.getPeriod().getEnd());
   }
 }
 

@@ -82,21 +82,4 @@ public abstract class AbstractShape implements IShape {
     this.shapeProperty = shapeProperty;
   }
 
-
-  @Override
-  public TimePeriod getPeriod() {
-    return period;
-  }
-
-  @Override
-  public void setPeriod(TimePeriod t) {
-    this.period = t;
-  }
-
-  @Override
-  public String getPeriodInfo(){
-    String output = getName() + " appears at time t=" + getPeriod().getStart()
-        + " and disappears at time t=" + getPeriod().getEnd();
-    return output;
-  }
 }

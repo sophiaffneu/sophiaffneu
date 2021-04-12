@@ -20,11 +20,9 @@ public class ChangeColorTest {
   @Before
   public void setup() {
     r = new Rectangle("R", new Point2D(200, 200),
-        new Color(1, 0, 0), new ShapeProperty(50, 100),
-        new TimePeriod(1, 100));
+        new Color(1, 0, 0), new ShapeProperty(50, 100));
     IShape c = new Oval("C", new Point2D(500, 100),
-        new Color(0, 0, 1), new ShapeProperty(60, 30),
-        new TimePeriod(6, 100));
+        new Color(0, 0, 1), new ShapeProperty(60, 30));
     c1 = new ChangeColor(r.copyShape(), new TimePeriod(10, 50),
         new Color(0, 1, 0));
     c2 = new ChangeColor(c.copyShape(), new TimePeriod(50, 80),
@@ -58,9 +56,6 @@ public class ChangeColorTest {
     assertEquals(50, c1.getTransShape().getShapeProperty().getOne());
     assertEquals(100, c1.getTransShape().getShapeProperty().getTwo());
 
-    assertEquals(1, c1.getTransShape().getPeriod().getStart());
-    assertEquals(100, c1.getTransShape().getPeriod().getEnd());
-
     assertEquals("C", c2.getTransShape().getName());
     assertEquals(500, c2.getTransShape().getPosition().getX());
     assertEquals(100, c2.getTransShape().getPosition().getY());
@@ -71,9 +66,6 @@ public class ChangeColorTest {
 
     assertEquals(60, c2.getTransShape().getShapeProperty().getOne());
     assertEquals(30, c2.getTransShape().getShapeProperty().getTwo());
-
-    assertEquals(6, c2.getTransShape().getPeriod().getStart());
-    assertEquals(100, c2.getTransShape().getPeriod().getEnd());
 
 
   }
@@ -133,53 +125,5 @@ public class ChangeColorTest {
     }
   }
 
-  @Test
-  public void testIllegalColor6() {
-    try {
-      illegalC = new ChangeColor(r.copyShape(), new TimePeriod(70, 120),
-          new Color(0, 1, 0));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
-
-  @Test
-  public void testIllegalColor7() {
-    try {
-      illegalC = new ChangeColor(r.copyShape(), new TimePeriod(0, 50),
-          new Color(0, 1, 0));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
-
-  @Test
-  public void testIllegalColor8() {
-    try {
-      illegalC = new ChangeColor(r.copyShape(), new TimePeriod(0, 1),
-          new Color(0, 1, 0));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
-
-
-  @Test
-  public void testIllegalColor9() {
-    try {
-      illegalC = new ChangeColor(r.copyShape(), new TimePeriod(110, 150),
-          new Color(0, 1, 0));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
 }
 

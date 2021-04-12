@@ -28,11 +28,9 @@ public class AnimationModelTest {
   public void setup() {
     model = new AnimationModel();
     r = new Rectangle("R", new Point2D(200, 200),
-        new Color(1, 0, 0), new ShapeProperty(50, 100),
-        new TimePeriod(1, 100));
+        new Color(1, 0, 0), new ShapeProperty(50, 100));
     c = new Oval("C", new Point2D(500, 100),
-        new Color(0, 0, 1), new ShapeProperty(60, 30),
-        new TimePeriod(6, 100));
+        new Color(0, 0, 1), new ShapeProperty(60, 30));
 
     copyR = r.copyShape();
     copyC = c.copyShape();

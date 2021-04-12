@@ -21,11 +21,9 @@ public class ScaleTest {
   @Before
   public void setup() {
     r = new Rectangle("R", new Point2D(200, 200),
-        new Color(1, 0, 0), new ShapeProperty(50, 100),
-        new TimePeriod(1, 100));
+        new Color(1, 0, 0), new ShapeProperty(50, 100));
     c = new Oval("C", new Point2D(500, 100),
-        new Color(0, 0, 1), new ShapeProperty(60, 30),
-        new TimePeriod(6, 100));
+        new Color(0, 0, 1), new ShapeProperty(60, 30));
     s1 = new Scale(c.copyShape(), new TimePeriod(10, 50), new ShapeProperty(25, 10));
     s2 = new Scale(r.copyShape(), new TimePeriod(51, 70), new ShapeProperty(25, 100));
   }
@@ -58,9 +56,6 @@ public class ScaleTest {
     assertEquals(25, s1.getTransShape().getShapeProperty().getOne());
     assertEquals(10, s1.getTransShape().getShapeProperty().getTwo());
 
-    assertEquals(6, s1.getTransShape().getPeriod().getStart());
-    assertEquals(100, s1.getTransShape().getPeriod().getEnd());
-
 
     assertEquals("R", s2.getTransShape().getName());
     assertEquals(200, s2.getTransShape().getPosition().getX());
@@ -72,9 +67,6 @@ public class ScaleTest {
 
     assertEquals(25, s2.getTransShape().getShapeProperty().getOne());
     assertEquals(100, s2.getTransShape().getShapeProperty().getTwo());
-
-    assertEquals(1, s2.getTransShape().getPeriod().getStart());
-    assertEquals(100, s2.getTransShape().getPeriod().getEnd());
   }
 
   @Test
@@ -121,53 +113,5 @@ public class ScaleTest {
     }
   }
 
-  @Test
-  public void testIllegalScale5() {
-    try {
-      illegalS = new Scale(r.copyShape(), new TimePeriod(70, 120),
-          new ShapeProperty(25, 10));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-
-  }
-
-  @Test
-  public void testIllegalScale6() {
-    try {
-      illegalS = new Scale(r.copyShape(), new TimePeriod(0, 50),
-          new ShapeProperty(25, 10));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
-
-  @Test
-  public void testIllegalScale7() {
-    try {
-      illegalS = new Scale(r.copyShape(), new TimePeriod(0, 5),
-          new ShapeProperty(25, 10));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
-
-  @Test
-  public void testIllegalScale8() {
-    try {
-      illegalS = new Scale(r.copyShape(), new TimePeriod(110, 150),
-          new ShapeProperty(25, 10));
-      fail("Invalid input should have thrown exception.");
-    } catch (IllegalArgumentException e) {
-      assertEquals("The transformation can only happen when the shape is present.",
-          e.getMessage());
-    }
-  }
 }
 

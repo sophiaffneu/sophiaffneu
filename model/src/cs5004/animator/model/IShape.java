@@ -55,20 +55,6 @@ public interface IShape {
    */
   void setShapeProperty(ShapeProperty shapeProperty);
 
-  /**
-   * Return the change time period  of a transformation.
-   *
-   * @return the change time period  of a transformation
-   */
-  TimePeriod getPeriod();
-
-  /**
-   * Set the showing and disappearing time of the shape.
-   *
-   * @param t the showing and disappearing time of the shape
-   */
-
-  void setPeriod(TimePeriod t);
 
   /**
    * Return the type of a shape.
@@ -86,5 +72,4 @@ public interface IShape {
 
   IShape copyShape();
 
-  String getPeriodInfo();
 }

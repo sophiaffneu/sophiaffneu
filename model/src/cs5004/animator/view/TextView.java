@@ -21,11 +21,6 @@ public class TextView {
       output += shape.toString() + "\n";
     }
     output += "\n\n";
-    for (IShape shape : model.getShapeList()) {
-      output += shape.getPeriodInfo() + "\n";
-    }
-
-    output += "\n\n";
 
     List<ITransformation> sortedList = model.getTransList().stream().sorted(Comparator.comparingInt(t ->
         t.getTimePeriod().getStart())).collect(Collectors.toList());
@@ -39,11 +34,9 @@ public class TextView {
   public static void main(String[] args) {
     IAnimator model = new AnimationModel();
     Rectangle r = new Rectangle("R", new Point2D(200, 200),
-        new Color(1, 0, 0), new ShapeProperty(50, 100),
-        new TimePeriod(1, 100));
+        new Color(1, 0, 0), new ShapeProperty(50, 100));
     Oval c = new Oval("C", new Point2D(500, 100),
-        new Color(0, 0, 1), new ShapeProperty(60, 30),
-        new TimePeriod(6, 100));
+        new Color(0, 0, 1), new ShapeProperty(60, 30));
 
     model.addShape(r);
     model.addShape(c);
