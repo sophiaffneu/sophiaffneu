@@ -21,10 +21,10 @@ public interface AnimationBuilder<Doc> {
   /**
    * Adds a new shape to the growing document.
    *
-   * @param name The unique name of the shape to be added.  
+   * @param name The unique name of the shape to be added.
    *             No shape with this name should already exist.
-   * @param type The type of shape (e.g. "ellipse", "rectangle") to be added.  
-   *             The set of supported shapes is unspecified, but should 
+   * @param type The type of shape (e.g. "ellipse", "rectangle") to be added.
+   *             The set of supported shapes is unspecified, but should
    *             include "ellipse" and "rectangle" as a minimum.
    * @return This {@link AnimationBuilder}
    */
@@ -32,7 +32,7 @@ public interface AnimationBuilder<Doc> {
 
   /**
    * Adds a transformation to the growing document.
-   * 
+   *
    * @param name The name of the shape (added with {@link AnimationBuilder#declareShape})
    * @param t1   The start time of this transformation
    * @param x1   The initial x-position of the shape
