@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class AnimationModel implements IAnimator {
   private List<IShape> shapeList;
   private List<ITransformation> transList;
+  private Canvas canvas;
 
   /**
    * Construct an animation model.
@@ -18,6 +19,12 @@ public class AnimationModel implements IAnimator {
   public AnimationModel() {
     this.shapeList = new ArrayList<>();
     this.transList = new ArrayList<>();
+  }
+
+  @Override
+  public IAnimator setBounds(int x, int y, int width, int height) {
+    canvas = new Canvas(x, y, width, height);
+    return this;
   }
 
   @Override
@@ -59,8 +66,8 @@ public class AnimationModel implements IAnimator {
 
     long count = transList.stream().filter(l -> l.getTransShape() == t.getTransShape()
         && l.getTransType() == t.getTransType()
-        && l.getTimePeriod().getStart() <= t.getTimePeriod().getStart()
-        && l.getTimePeriod().getEnd() >= t.getTimePeriod().getStart()).count();
+        && l.getTimePeriod().getStart() < t.getTimePeriod().getStart()
+        && l.getTimePeriod().getEnd() >t.getTimePeriod().getStart()).count();
     if (count != 0) {
       throw new IllegalArgumentException("Same type of transformation with overlapping time "
           + "period already exist.");

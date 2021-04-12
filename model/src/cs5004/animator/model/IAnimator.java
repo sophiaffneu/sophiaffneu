@@ -2,10 +2,22 @@ package cs5004.animator.model;
 
 import java.util.List;
 
+import cs5004.animator.util.AnimationBuilder;
+
 /**
  * Interface for animation model.
  */
 public interface IAnimator {
+  /**
+   * Specify the bounding box to be used for the animation.
+   * @param x The leftmost x value
+   * @param y The topmost y value
+   * @param width The width of the bounding box
+   * @param height The height of the bounding box
+   * @return This {@link AnimationBuilder}
+   */
+  IAnimator setBounds(int x, int y, int width, int height);
+
   /**
    * Add a shape.
    *

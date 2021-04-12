@@ -14,11 +14,13 @@ public class Oval extends AbstractShape {
    * @param position      the position of the shape
    * @param color         the color of the shape
    * @param shapeProperty the shapeProperty of the shape
-   * @param period        the time period of the shape
-   */
-  public Oval(String name, Point2D position, Color color, ShapeProperty shapeProperty,
-              TimePeriod period) {
-    super(name, position, color, shapeProperty, period);
+     */
+  public Oval(String name, Point2D position, Color color, ShapeProperty shapeProperty) {
+    super(name, position, color, shapeProperty);
+  }
+
+  public Oval(String name) {
+    super(name);
   }
 
   @Override
@@ -29,7 +31,7 @@ public class Oval extends AbstractShape {
   @Override
   public IShape copyShape() {
     IShape newOval = new Oval(this.getName(), this.getPosition(), this.getColor(),
-        this.shapeProperty, this.period);
+        this.shapeProperty);
     return newOval;
   }
 
