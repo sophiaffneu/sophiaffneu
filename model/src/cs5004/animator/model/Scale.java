@@ -40,7 +40,7 @@ public class Scale extends AbstractTransformation {
   public String toString() {
     String output = transShape.getName();
     if (transShape.getShapeType() == ShapeType.RECTANGLE) {
-      if (this.getToShapeProperty().getOne() != toShapeProperty.getOne()) {
+      if (fromShapeProperty.getOne() != toShapeProperty.getOne()) {
         output += " changes width from " + fromShapeProperty.getOne()
                 + " to " + toShapeProperty.getOne();
       }
