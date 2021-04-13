@@ -65,5 +65,5 @@ public interface IAnimator {
   List<ITransformation> getTransList();
 
 
-  // List<cs5004.animator.model.IShape> getShapeAtTick();
+  List<IShape> getShapeAtTick(int t);
 }
