@@ -1,41 +1,48 @@
 package cs5004.animator.view;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 
+import cs5004.animator.model.IAnimator;
 import cs5004.animator.model.IShape;
 import cs5004.animator.model.ShapeType;
 
 public class SwingPanel extends JPanel {
-  private List<IShape> readModel;
+  public List<IShape> shapeAtTick = new ArrayList<>();
 
-
-  public SwingPanel(List<IShape> readModel,int width, int height){
+  public SwingPanel(int width, int height){
     super(true);
-    this.readModel = readModel;
+
+
     setBackground(Color.WHITE);
     setSize(width,height);
     setLocation(0,0);
     setBorder(new LineBorder(Color.BLACK,3));
   }
 
-  public SwingPanel(List<IShape> readModel){
+  public SwingPanel(){
     super(true);
-    this.readModel = readModel;
+
     setBackground(Color.WHITE);
     setBorder(new LineBorder(Color.BLACK,3));
+  }
+
+  public void setShapeAtTick(List<IShape> s) {
+    this.shapeAtTick = s;
   }
 
   public void paintComponent(Graphics g){
     super.paintComponent(g);
     Graphics2D g2 = (Graphics2D) g;
-    if(readModel == null){
+    System.out.println("shape at tick in swing panle size  " + shapeAtTick.size());
+    if(shapeAtTick == null){
       return;
     }
-    for(IShape s:readModel){
+    for(IShape s:shapeAtTick){
+      System.out.println("panel printing.2" );
       g2.setColor(s.getColor());
       if(s.getShapeType()== ShapeType.RECTANGLE) {
         g2.drawRect(s.getPosition().getX(), s.getPosition().getY(), s.getShapeProperty().getOne(), s.getShapeProperty().getTwo());
@@ -44,6 +51,6 @@ public class SwingPanel extends JPanel {
         g2.drawOval(s.getPosition().getX(), s.getPosition().getY(), s.getShapeProperty().getOne(), s.getShapeProperty().getTwo());
         g2.fillOval(s.getPosition().getX(), s.getPosition().getY(), s.getShapeProperty().getOne(), s.getShapeProperty().getTwo());
       }
-      }
+    }
   }
 }
