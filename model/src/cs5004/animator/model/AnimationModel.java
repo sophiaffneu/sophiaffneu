@@ -12,7 +12,10 @@ import java.util.stream.Collectors;
 public class AnimationModel implements IAnimator {
   private List<IShape> shapeList;
   private List<ITransformation> transList;
-  private Canvas canvas;
+  private  int x;
+  private  int y;
+  private  int width;
+  private  int height;
 
   /**
    * Construct an animation model.
@@ -24,8 +27,32 @@ public class AnimationModel implements IAnimator {
 
   @Override
   public IAnimator setBounds(int x, int y, int width, int height) {
-    canvas = new Canvas(x, y, width, height);
+    this.x = x;
+    this.y = y;
+    this.width =width;
+    this.height = height;
     return this;
+  }
+
+
+  @Override
+  public int getX(){
+    return  x;
+  }
+
+  @Override
+  public int getY(){
+    return  y;
+  }
+
+  @Override
+  public int getWidth(){
+    return  width;
+  }
+
+  @Override
+  public int getHeight(){
+    return  height;
   }
 
   @Override
@@ -65,13 +92,14 @@ public class AnimationModel implements IAnimator {
     // count is the number of existing transformations in the list has the same type as t and the
     //time periods overlap.
 
-    long count = transList.stream().filter(l -> l.getTransShape() == t.getTransShape()
-            && l.getTransType() == t.getTransType()
-            && l.getTimePeriod().getStart() < t.getTimePeriod().getStart()
-            && l.getTimePeriod().getEnd() > t.getTimePeriod().getStart()).count();
-    if (count != 0) {
-      throw new IllegalArgumentException("Same type of transformation with overlapping time "
-              + "period already exist.");
+    for(ITransformation existT:transList){
+      if(existT.getTransShape().getName().equals(t.getTransShape().getName())
+          && existT.getTransType() == t.getTransType()
+          && existT.getTimePeriod().getStart() <= t.getTimePeriod().getStart()
+          && existT.getTimePeriod().getEnd() >= t.getTimePeriod().getEnd()){
+        throw new IllegalArgumentException("Same type of transformation with overlapping time "
+            + "period already exist.");
+      }
     }
     transList.add(t);
   }
