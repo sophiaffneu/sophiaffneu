@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.awt.*;
+
 /**
  * An abstract transformation class.
  */
@@ -7,12 +9,15 @@ public abstract class AbstractTransformation implements ITransformation {
 
   protected IShape transShape;
   protected TimePeriod timePeriod;
+  protected Point2D fromPosition;
+  protected ShapeProperty fromShapeProperty;
+ protected Color fromColor;
+
 
   /**
    * Construct the initial cs5004.animator.model.AbstractTransformation.
    *
    * @param transShape the shape that is to be changed.
-   *
    * @param timePeriod the time interval of the transformation.
    */
   public AbstractTransformation(IShape transShape, TimePeriod timePeriod) {
@@ -26,6 +31,9 @@ public abstract class AbstractTransformation implements ITransformation {
     }*/
     this.transShape = transShape;
     this.timePeriod = timePeriod;
+    this.fromPosition = transShape.getPosition();
+    this.fromColor = transShape.getColor();
+    this.fromShapeProperty = transShape.getShapeProperty();
   }
 
 
@@ -37,6 +45,21 @@ public abstract class AbstractTransformation implements ITransformation {
   @Override
   public TimePeriod getTimePeriod() {
     return timePeriod;
+  }
+
+  @Override
+  public Point2D getPosition() {
+    return this.fromPosition;
+  }
+
+  @Override
+  public ShapeProperty getShapeProperty() {
+    return this.fromShapeProperty;
+  }
+
+  @Override
+  public Color getColor() {
+    return this.fromColor;
   }
 
 }
