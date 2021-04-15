@@ -21,12 +21,13 @@ public class AnimatorController implements ActionListener {
      svgView s;
    */
   int elapsedTime = 0;
+  int speed;
 
-  Timer timer = new Timer(200, this);
+  Timer timer = new Timer(100,this);
 
   public AnimatorController(IAnimator m) {
     this.m = m;
-     v = new VisualView(20, 170, 360, 360);
+    v = new VisualView(m.getX(),m.getY(), m.getWidth(), m.getHeight());
   }
 
   public void go() throws IOException {
@@ -36,16 +37,9 @@ public class AnimatorController implements ActionListener {
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    elapsedTime += 200;
-   // System.out.println(elapsedTime);
-    List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime);
-    System.out.println("controller translist size " + m.getTransList().size());
-   System.out.println("controller get Shape Attick size " + m.getShapeAtTick(elapsedTime));
-    /*for(ITransformation t : m.getTransList()) {
-      System.out.println(t.toString());
-    }*/
-    if (1 == 1) {
-      if (shapeAtTick == null) {
+    elapsedTime += 100;
+    List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime, 100);
+    if (shapeAtTick == null) {
         timer.stop();
         System.out.println("timer stopped.");
       }
@@ -54,4 +48,4 @@ public class AnimatorController implements ActionListener {
       v.currentView();
     }
   }
-}
+
