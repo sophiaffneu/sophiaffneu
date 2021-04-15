@@ -15,8 +15,6 @@ public class SwingPanel extends JPanel {
 
   public SwingPanel(int width, int height){
     super(true);
-
-
     setBackground(Color.WHITE);
     setSize(width,height);
     setLocation(0,0);
@@ -25,7 +23,6 @@ public class SwingPanel extends JPanel {
 
   public SwingPanel(){
     super(true);
-
     setBackground(Color.WHITE);
     setBorder(new LineBorder(Color.BLACK,3));
   }
@@ -34,15 +31,16 @@ public class SwingPanel extends JPanel {
     this.shapeAtTick = s;
   }
 
+
+
   public void paintComponent(Graphics g){
     super.paintComponent(g);
     Graphics2D g2 = (Graphics2D) g;
-    System.out.println("shape at tick in swing panle size  " + shapeAtTick.size());
+
     if(shapeAtTick == null){
       return;
     }
     for(IShape s:shapeAtTick){
-      System.out.println("panel printing.2" );
       g2.setColor(s.getColor());
       if(s.getShapeType()== ShapeType.RECTANGLE) {
         g2.drawRect(s.getPosition().getX(), s.getPosition().getY(), s.getShapeProperty().getOne(), s.getShapeProperty().getTwo());
