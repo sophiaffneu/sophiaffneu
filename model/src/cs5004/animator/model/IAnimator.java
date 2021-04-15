@@ -70,5 +70,5 @@ public interface IAnimator {
   List<ITransformation> getTransList();
 
 
-  List<IShape> getShapeAtTick(int t);
+  List<IShape> getShapeAtTick(int t, int speed);
 }
