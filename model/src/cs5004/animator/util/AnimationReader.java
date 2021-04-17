@@ -4,6 +4,8 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+import cs5004.animator.model.AnimationModel;
+
 /**
  * A helper to read animation data and construct an animation from it.
  */
@@ -31,7 +33,7 @@ public class AnimationReader {
    * @param <Doc>    The main model interface type describing animations
    * @return
    */
-  public static <Doc> Doc parseFile(Readable readable, AnimationBuilder<Doc> builder) {
+  public static AnimationModel parseFile(Readable readable, AnimationBuilder builder) {
     Objects.requireNonNull(readable, "Must have non-null readable source");
     Objects.requireNonNull(builder, "Must provide a non-null AnimationBuilder");
     Scanner s = new Scanner(readable);
@@ -56,7 +58,7 @@ public class AnimationReader {
     return builder.build();
   }
 
-  private static <Doc> void readCanvas(Scanner s, AnimationBuilder<Doc> builder) {
+  private static void readCanvas(Scanner s, AnimationBuilder builder) {
     int[] vals = new int[4];
     String[] fieldNames = {"left", "top", "width", "height"};
     for (int i = 0; i < 4; i++) {
@@ -65,7 +67,7 @@ public class AnimationReader {
     builder.setBounds(vals[0], vals[1], vals[2], vals[3]);
   }
 
-  private static <Doc> void readShape(Scanner s, AnimationBuilder<Doc> builder) {
+  private static void readShape(Scanner s, AnimationBuilder builder) {
     String name;
     String type;
     if (s.hasNext()) {
@@ -81,7 +83,7 @@ public class AnimationReader {
     builder.declareShape(name, type);
   }
 
-  private static <Doc> void readMotion(Scanner s, AnimationBuilder<Doc> builder) {
+  private static void readMotion(Scanner s, AnimationBuilder builder) {
     String[] fieldNames = new String[]{
             "initial time",
             "initial x-coordinate", "initial y-coordinate",

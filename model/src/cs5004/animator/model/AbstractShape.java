@@ -26,9 +26,10 @@ public abstract class AbstractShape implements IShape {
   public AbstractShape(String name, Point2D position, Color color, ShapeProperty shapeProperty) {
     //The position of the shape has to be within the canvas. Will check if input is valid when the
     //canvas size info. is given in the coming assignments.
+    /**
     if (name == null || position == null || color == null || shapeProperty == null) {
       throw new IllegalArgumentException("Parameters can not be null.");
-    }
+    }*/
 
     this.name = name;
     this.position = position;

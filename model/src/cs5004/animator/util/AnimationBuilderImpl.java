@@ -22,10 +22,9 @@ import cs5004.animator.model.ShapeType;
 import cs5004.animator.model.TimePeriod;
 
 public class AnimationBuilderImpl implements AnimationBuilder {
-  IAnimator m = new AnimationModel();
-
+  AnimationModel m = new AnimationModel();
   @Override
-  public Object build() {
+  public AnimationModel build() {
     return m;
   }
 

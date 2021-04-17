@@ -42,11 +42,7 @@ public class NoChange extends AbstractTransformation{
 
   @Override
   public String toString() {
-    String output = transShape.getName() + " moves from " + this.fromPosition
-            + " to " + this.toPosition + " change from " + this.fromShapeProperty.getOne()
-            + " to " + this.toShapeProperty.getOne()+ " change from " + this.fromShapeProperty.getTwo()
-            + " to " + this.toShapeProperty.getTwo() + " color from " + this.fromColor
-            + " to " + this.fromColor +" from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
+    String output = transShape.getName() + " stay same" + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
     return output;
   }
 }

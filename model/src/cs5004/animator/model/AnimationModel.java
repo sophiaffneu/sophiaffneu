@@ -27,6 +27,9 @@ public class AnimationModel implements IAnimator {
 
   @Override
   public IAnimator setBounds(int x, int y, int width, int height) {
+    if (width <= 0 || height <= 0) {
+      throw new IllegalArgumentException("invalid width or height");
+    }
     this.x = x;
     this.y = y;
     this.width = width;

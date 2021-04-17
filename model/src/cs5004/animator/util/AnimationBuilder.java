@@ -1,11 +1,13 @@
 package cs5004.animator.util;
 
+import cs5004.animator.model.AnimationModel;
+
 public interface AnimationBuilder<Doc> {
   /**
    * Constructs a final document.
    * @return the newly constructed document
    */
-  Doc build();
+  AnimationModel build();
 
 
   /**

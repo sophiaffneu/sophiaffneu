@@ -9,14 +9,25 @@ import java.util.stream.Collectors;
 import cs5004.animator.model.*;
 import cs5004.animator.model.Rectangle;
 
-public class TextView {
+public class TextView implements IView {
   private IAnimator model;
+  private String outputTemp;
 
   public TextView(IAnimator model) {
     this.model = model;
   }
 
-  public void getText() {
+  public void refresh(){
+  }
+
+  public String getViewType(){
+    return "text";
+  }
+
+  public String getOutPut(){
+    return outputTemp;
+  }
+  public void play() {
     String output = "";
     for (IShape shape : model.getShapeList()) {
       output += shape.toString() + "\n";
@@ -46,7 +57,7 @@ public class TextView {
     for (ITransformation t : sortedList) {
       output += t.toString() + "\n";
     }
-    System.out.println(output);
+    outputTemp = output;
   }
 
 
@@ -84,6 +95,7 @@ public class TextView {
     model.addTransformations(changeColorC);
 
     TextView text = new TextView(model);
-    text.getText();
+    text.play();
+    System.out.println(text.getOutPut());
   }
 }
