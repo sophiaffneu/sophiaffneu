@@ -122,7 +122,7 @@ public class SVGView implements IView {
         double start = t.getTimePeriod().getStart() * 1000 / (double) tempo;
         double end = t.getTimePeriod().getEnd() * 1000 / (double) tempo;
         double dur = end - start;
-        if (t.getTransShape().getName() == s.getName()
+        if (t.getTransShape().getName().equals(s.getName())
             && t.getTransShape().getShapeType() == s.getShapeType()) {
           switch (t.getTransType().toString()) {
             case "move":
@@ -179,7 +179,7 @@ public class SVGView implements IView {
               if (t.getToColor().getRed() != t.getColor().getRed()
                   || t.getToColor().getGreen() != t.getColor().getGreen()
                   || t.getToColor().getBlue() != t.getColor().getBlue()) {
-                output += "    <animate attributeType=\"xml\" begin=\"" + start + "ms\" dur=\"" + dur + "ms\" attributeName=\"color\""
+                output += "    <animate attributeType=\"css\" begin=\"" + start + "ms\" dur=\"" + dur + "ms\" attributeName=\"fill\""
                     + " from=\"rgb(" + t.getColor().getRed() + ","
                     + t.getColor().getGreen() + ","
                     + t.getColor().getBlue() + ")\" to=\"rgb("
@@ -287,7 +287,7 @@ public class SVGView implements IView {
                 if (t.getToColor().getRed() != t.getColor().getRed()
                     || t.getToColor().getGreen() != t.getColor().getGreen()
                     || t.getToColor().getBlue() != t.getColor().getBlue()) {
-                  output += "    <animate attributeType=\"xml\" begin=\"" + start + "ms\" dur=\"" + dur + "ms\" attributeName=\"color\""
+                  output += "    <animate attributeType=css\"x\" begin=\"" + start + "ms\" dur=\"" + dur + "ms\" attributeName=\"fill\""
                       + " from=\"rgb(" + t.getColor().getRed() + ","
                       + t.getColor().getGreen() + ","
                       + t.getColor().getBlue() + ")\" to=\"rgb("
@@ -340,42 +340,35 @@ public class SVGView implements IView {
 
     public static void main (String[]args){
       IAnimator model = new AnimationModel();
-      model.setBounds(100, 200, 300, 400);
-      Rectangle r = new Rectangle("R", new Point2D(200, 200),
-          new Color(128, 0, 128), new ShapeProperty(50, 100));
-      Oval c = new Oval("C", new Point2D(500, 100),
-          new Color(255, 128, 0), new ShapeProperty(60, 30));
+      model.setBounds(145, 50, 410, 199);
+      Rectangle disk1 = new Rectangle("disk1", new Point2D(190 ,161),
+          new Color(113, 87, 151), new ShapeProperty(20, 11));
 
-      IShape copyR = r.copyShape();
-      IShape copyC = c.copyShape();
+      Rectangle disk2 = new Rectangle("disk2", new Point2D(183,172),
+          new Color(35, 173, 73),new ShapeProperty(32, 11));
 
-      model.addShape(r);
-      model.addShape(c);
+      IShape copy1 = disk1.copyShape();
+      IShape copy2 = disk2.copyShape();
 
-      ITransformation moveR1 = new Move(copyR, new TimePeriod(10, 20), new Point2D(200, 300));
-      ITransformation moveR2 = new Move(copyR, new TimePeriod(20, 30), new Point2D(200, 200));
-      ITransformation noR3 = new NoChange(copyR, new TimePeriod(30, 40));
-      ITransformation moveR3 = new Move(copyR, new TimePeriod(40, 50), new Point2D(200, 700));
+      model.addShape(disk1);
+      model.addShape(disk2);
 
-      //ITransformation scaleR1 = new Scale(copyR, new TimePeriod(30, 40), new ShapeProperty(200, 50));
-      ITransformation scaleC1 = new Scale(copyC, new TimePeriod(1, 2), new ShapeProperty(4, 5));
+      ITransformation no1 = new NoChange(copy1,new TimePeriod(1,25));
 
-      ITransformation Color1 = new ChangeColor(copyC, new TimePeriod(2, 3), new Color(255, 0, 0));
-      ITransformation No1 = new NoChange(copyC, new TimePeriod(3, 8));
-      ITransformation scaleC2 = new Scale(copyC, new TimePeriod(8, 15), new ShapeProperty(4, 10));
+      ITransformation move1 = new Move(copy1, new TimePeriod(25, 35), new Point2D(190, 50));
+      ITransformation no2 = new NoChange(copy1, new TimePeriod(35, 36));
+      ITransformation move2 = new Move(copy1, new TimePeriod(36, 46), new Point2D(340, 50 ));
 
-      model.addTransformations(moveR1);
-      model.addTransformations(moveR2);
-      model.addTransformations(noR3);
-      model.addTransformations(moveR3);
-      //model.addTransformations(scaleR1);
-      model.addTransformations(scaleC1);
-      model.addTransformations(Color1);
-      model.addTransformations(No1);
-      model.addTransformations(scaleC2);
+
+
+      model.addTransformations(move1);
+      model.addTransformations(move2);
+      model.addTransformations(no2);
+      model.addTransformations(no1);
+
 
       SVGView svg = new SVGView(model, 1);
-      svg.loopOrNot(true, 100);
+      //svg.loopOrNot(true, 100000000);
       svg.play();
       System.out.println(svg.getOutPut());
     }

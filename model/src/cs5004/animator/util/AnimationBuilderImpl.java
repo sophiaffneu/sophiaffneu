@@ -3,12 +3,10 @@ package cs5004.animator.util;
 
 import java.awt.*;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import cs5004.animator.model.AnimationModel;
 import cs5004.animator.model.ChangeColor;
-import cs5004.animator.model.IAnimator;
 import cs5004.animator.model.IShape;
 import cs5004.animator.model.ITransformation;
 import cs5004.animator.model.Move;
