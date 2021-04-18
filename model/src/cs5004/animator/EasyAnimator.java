@@ -10,19 +10,23 @@ import java.util.Arrays;
 
 import javax.swing.JOptionPane;
 
+import cs5004.animator.Controller.AnimatorController;
+import cs5004.animator.Controller.ViewFactory;
 import cs5004.animator.model.AnimationModel;
-import cs5004.animator.model.AnimationBuilderImpl;
 
+
+import cs5004.animator.model.IAnimator;
 import cs5004.animator.util.AnimationBuilder;
+import cs5004.animator.util.AnimationBuilderImpl;
 import cs5004.animator.util.AnimationReader;
 import cs5004.animator.view.IView;
-import cs5004.animator.view.ViewFactory;
+
 
 
 public class EasyAnimator {
   public static void main(String[] args) {
-    AnimationBuilder builder = new AnimationBuilderImpl();
-    AnimationModel model ;
+    AnimationBuilder<IAnimator> builder = new AnimationBuilderImpl();
+    IAnimator model ;
 
     Readable in = new StringReader("");
     int tick = 1;
@@ -32,9 +36,9 @@ public class EasyAnimator {
     Appendable out = System.out;
 
     if(!(Arrays.asList(args).contains("-in")
-        && Arrays.asList(args).contains("-view"))){
+            && Arrays.asList(args).contains("-view"))){
       JOptionPane.showMessageDialog(null,
-          "input and view needed");
+              "input and view needed");
     }
 
     for(int i = 0; i < args.length; i++){
@@ -83,21 +87,24 @@ public class EasyAnimator {
       }
     }
 
-     model = AnimationReader.parseFile(in,builder);
-     view = new ViewFactory().generateView(viewType,model,tick);
-     view.play();
-     try{
-       if(writer != null){
-         writer.write(view.getOutPut());
-         //writer.append(view.getOutPut());
-         //writer.close();
-       }else{
-         out.append(view.getOutPut());
-       }
+    model = AnimationReader.parseFile(in,builder);
+    view = new ViewFactory().generateView(viewType,model,tick);
+    AnimatorController animatorController = new AnimatorController(view, model,tick);
+    animatorController.go(view);
 
-     }catch (IOException e){
-       JOptionPane.showMessageDialog(null,"can't write on file");
-     }
+   /* view.play();
+    try{
+      if(writer != null){
+        writer.write(view.getOutPut());
+        //writer.append(view.getOutPut());
+        //writer.close();
+      }else{
+        out.append(view.getOutPut());
+      }
+
+    }catch (IOException e){
+      JOptionPane.showMessageDialog(null,"can't write on file");
+    }*/
 
   }
 
