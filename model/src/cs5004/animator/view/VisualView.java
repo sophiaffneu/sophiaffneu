@@ -1,5 +1,9 @@
 package cs5004.animator.view;
 
+/**
+ * This is a class of visual view. It draws and plays the animation inside a window.
+ */
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,6 +18,14 @@ public class VisualView extends JFrame implements IView {
   private SwingPanel panel;
   private int speed;
 
+  /**
+   * construct a visual view
+   * @param x the x coordinate of the canvas;
+   * @param y the y coordinate of the canvas;
+   * @param width the width of the canvas;
+   * @param height the height of the canvas;
+   * @param speed the playing speed of the animation.
+   */
   public VisualView(int x, int y, int width, int height, int speed) {
     super();
     this.setTitle("EasyAnimator");
@@ -33,10 +45,17 @@ public class VisualView extends JFrame implements IView {
     this.setVisible(true);
   }
 
+  /**
+   * To get the swing panel
+   * @return the swing panel.
+   */
   public SwingPanel getPanel() {
     return this.panel;
   }
 
+  /**
+   * To refresh the screen for animation effect.
+   */
   @Override
   public void refresh() {
     repaint();
@@ -44,7 +63,7 @@ public class VisualView extends JFrame implements IView {
 
   @Override
   public String getViewType() {
-    return "VisualView";
+    return "visual";
   }
 
   @Override
