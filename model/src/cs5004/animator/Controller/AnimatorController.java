@@ -23,16 +23,16 @@ public class AnimatorController implements ActionListener {
   IView v;
   int elapsedTime = 0;
   int speed;
+  Timer timer;
 
   public AnimatorController(IView view, IAnimator model, int tempo) {
-    this.v = view ;
+    this.v = view;
     this.m = model;
     this.speed = tempo;
   }
 
-  Timer timer = new Timer(1000/speed,this);
 
-  public void go(IView v)  {
+  public void go(IView v) {
     switch (v.getViewType()) {
       case "text":
         v.getOutPut();
@@ -41,19 +41,20 @@ public class AnimatorController implements ActionListener {
         v.play();
         break;
       case "visual":
+        timer = new Timer(1000 / speed, this);
         timer.start();
-    }
+           }
   }
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    elapsedTime += 1000/speed;
-    List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime, 20);
+    elapsedTime += 1000 / speed;
+    List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime, speed);
     if (shapeAtTick == null) {
-        timer.stop();
-      }
-      v.getPanel().setShapeAtTick(shapeAtTick);
-      v.refresh();
+      timer.stop();
     }
+    v.getPanel().setShapeAtTick(shapeAtTick);
+    v.refresh();
   }
+}
 
