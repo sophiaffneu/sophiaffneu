@@ -1,11 +1,14 @@
 package cs5004.animator.view;
 
 public interface IView {
+
+  SwingPanel getPanel();
+
   void refresh();
 
   String getViewType();
 
-  void play();
+  void getOutPut();
 
-  String getOutPut();
+  String play();
 }
