@@ -10,7 +10,6 @@ import cs5004.animator.view.TextViewNoModel;
 import cs5004.animator.view.VisualView;
 
 public class ViewFactory {
-  private IView view;
 
   public IView generateView(String viewType, IAnimator model, int tempo) {
     switch (viewType) {
