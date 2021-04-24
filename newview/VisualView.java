@@ -14,7 +14,7 @@ import cs5004.animator.model.IShape;
 /**
  * This is a class of visual view. It draws and plays the animation inside a window.
  */
-public class VisualView extends JFrame implements IView, ActionListener {
+public class VisualView extends JFrame implements IView {
   private SwingPanel panel;
   private JPanel buttonPanel;
   private Timer timer;
@@ -34,6 +34,7 @@ public class VisualView extends JFrame implements IView, ActionListener {
    */
   public VisualView(int x, int y, int width, int height, int speed) {
     super();
+    this.speed = speed;
 
     this.setTitle("EasyAnimator");
     this.setSize(width, height);
@@ -47,14 +48,6 @@ public class VisualView extends JFrame implements IView, ActionListener {
     this.increaseSpeedB = new JButton("INCREASE SPEED");
     this.decreaseSpeedB = new JButton("DECREASE SPEED");
     this.cycleButton = new JButton("CYCLE");
-
-    startButton.addActionListener(this);
-    resumeButton.addActionListener(this);
-    restartButton.addActionListener(this);
-    pauseButton.addActionListener(this);
-    increaseSpeedB.addActionListener(this);
-    decreaseSpeedB.addActionListener(this);
-    cycleButton.addActionListener(this);
 
     buttonPanel = new JPanel();
     buttonPanel.setBackground(Color.YELLOW);
@@ -104,27 +97,32 @@ public class VisualView extends JFrame implements IView, ActionListener {
     // interface requirement
   }
 
-  @Override
-  public void actionPerformed(ActionEvent e) {
-
-    if (e.getSource() == startButton) {
-
-      elapsedTime += 1000 / this.speed;
-      timer = new Timer(1000 / speed, this);
-      timer.start();
-      if (this.panel.getShapeAtTick() == null) {
-        timer.stop();
-      }
-      this.refresh();
-    } else if (e.getSource() == restartButton) {
-
-    } else if (e.getSource() == resumeButton) {
-
-    } else if (e.getSource() == increaseSpeedB) {
-
-    }
-    //  ... keep adding more buttons
-
-
+  public JButton getStartButton() {
+    return startButton;
   }
+
+  public JButton getResumeButton() {
+    return resumeButton;
+  }
+
+  public JButton getPauseButton() {
+    return pauseButton;
+  }
+
+  public JButton getRestartButton() {
+    return restartButton;
+  }
+
+  public JButton getIncreaseSpeedB() {
+    return increaseSpeedB;
+  }
+
+  public JButton getDecreaseSpeedB() {
+    return decreaseSpeedB;
+  }
+
+  public JButton getCycleButton() {
+    return cycleButton;
+  }
+
 }
