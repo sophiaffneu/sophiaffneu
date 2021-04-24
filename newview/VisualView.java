@@ -48,8 +48,7 @@ public class VisualView extends JFrame implements IView, ActionListener {
     this.cycleButton = new JButton("CYCLE");
     buttonPanel = new JPanel();
     buttonPanel.setBackground(Color.YELLOW);
-    buttonPanel.setBounds(120, 70, 300, 90);
-    buttonPanel.setLayout(new GridLayout(2, 3, 10, 10));
+    buttonPanel.setBounds(120, 70, 700, 45);
     this.add(buttonPanel);
     buttonPanel.add(startButton);
     buttonPanel.add(resumeButton);
