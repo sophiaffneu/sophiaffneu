@@ -48,6 +48,8 @@ public class SwingPanel extends JPanel {
     this.shapeAtTick = s;
   }
 
+  public  List<IShape> getShapeAtTick(){ return this.shapeAtTick;}
+
   /**
    * Paint the panel at a certain tick.
    *
