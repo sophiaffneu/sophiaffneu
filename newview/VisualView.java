@@ -107,9 +107,9 @@ public class VisualView extends JFrame implements IView, ActionListener {
       elapsedTime += 1000 / this.speed;
       timer = new Timer(1000 / speed, this);
       timer.start();
-       /* if (shapeAtTick == null) {
+       if (this.panel.getShapeAtTick() == null) {
       timer.stop();
-    }*/
+    }
       this.refresh();
     }
 
