@@ -1,12 +1,23 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
+import java.awt.Color;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import cs5004.animator.model.*;
+
+import cs5004.animator.model.AnimationModel;
+import cs5004.animator.model.ChangeColor;
+import cs5004.animator.model.IAnimator;
+import cs5004.animator.model.IShape;
+import cs5004.animator.model.ITransformation;
+import cs5004.animator.model.Move;
+import cs5004.animator.model.Oval;
+import cs5004.animator.model.Point2D;
 import cs5004.animator.model.Rectangle;
+import cs5004.animator.model.Scale;
+import cs5004.animator.model.ShapeProperty;
+import cs5004.animator.model.TimePeriod;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -40,8 +51,8 @@ public class AnimationModelTest {
   public void testShapeListOperations() {
     model.addShape(r);
     model.addShape(c);
-    List<String> namelist = model.getShapeList().stream().map(IShape::getName).
-        collect(Collectors.toList());
+    List<String> namelist = model.getShapeList().stream().map(IShape::getName)
+        .collect(Collectors.toList());
     assertEquals("R", namelist.get(0));
     assertEquals("C", namelist.get(1));
     assertTrue(model.getShapeList().contains(r));

@@ -1,43 +1,64 @@
 package cs5004.animator.view;
 
-import java.awt.*;
+import cs5004.animator.model.IShape;
+import cs5004.animator.model.ITransformation;
+import cs5004.animator.model.TransType;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import cs5004.animator.model.*;
-import cs5004.animator.model.Rectangle;
-
+/**
+ * This is a TextView class. It represents a text of animation.
+ */
 public class TextView implements IView {
-  private IAnimator model;
   private String outputTemp;
+  private List<IShape> shapeList;
+  private List<ITransformation> transList;
 
-  public TextView(IAnimator model) {
-    this.model = model;
+  /**
+   * Construct the text view.
+   *
+   * @param shapeList a list of shapes
+   * @param transList a list of transformations
+   */
+  public TextView(List<IShape> shapeList, List<ITransformation> transList) {
+    this.shapeList = shapeList;
+    this.transList = transList;
   }
 
-  public void refresh(){
+  @Override
+  public SwingPanel getPanel() {
+    return null;
   }
 
-  public String getViewType(){
+  @Override
+  public void refresh() {
+    // interface requirement
+  }
+
+  @Override
+  public String getViewType() {
     return "text";
   }
 
-  public String getOutPut(){
+  @Override
+  public String getOutPut() {
     return outputTemp;
   }
+
+  @Override
   public void play() {
     String output = "";
-    for (IShape shape : model.getShapeList()) {
+    for (IShape shape : shapeList) {
       output += shape.toString() + "\n";
     }
     output += "\n\n";
 
-
-    for (IShape s : model.getShapeList()) {
+    for (IShape s : shapeList) {
       List<ITransformation> singleList = new ArrayList<>();
-      for (ITransformation t : model.getTransList()) {
+      for (ITransformation t : transList) {
         if (t.getTransShape().getName().equals(s.getName())
             && t.getTransShape().getShapeType() == s.getShapeType()) {
           singleList.add(t);
@@ -48,54 +69,19 @@ public class TextView implements IView {
 
       int begin = sortedList.get(0).getTimePeriod().getStart();
       int end = sortedList.get(sortedList.size() - 1).getTimePeriod().getEnd();
-      output += s.getName() + " appears at time t=" + begin + " and disappears at time t=" + end + "\n";
+      output += s.getName() + " appears at time t=" + begin + " and disappears at time t=" + end
+          + "\n";
     }
     output += "\n\n";
 
-    List<ITransformation> sortedList = model.getTransList().stream().sorted(Comparator.comparingInt(t ->
+    List<ITransformation> sortedList = transList.stream().sorted(Comparator.comparingInt(t ->
         t.getTimePeriod().getStart())).collect(Collectors.toList());
     for (ITransformation t : sortedList) {
-      output += t.toString() + "\n";
+      if (t.getTransType() != TransType.NOCHANGE) {
+        output += t.toString() + "\n";
+      }
+
     }
     outputTemp = output;
-  }
-
-
-  public static void main(String[] args) {
-    IAnimator model = new AnimationModel();
-    Rectangle r = new Rectangle("R", new Point2D(200, 200),
-        new Color(255, 0, 0), new ShapeProperty(50, 100));
-    Oval c = new Oval("C", new Point2D(500, 100),
-        new Color(0, 0, 255), new ShapeProperty(60, 30));
-
-    model.addShape(r);
-    model.addShape(c);
-
-    IShape copyR = r.copyShape();
-    IShape copyC = c.copyShape();
-
-    ITransformation moveR = new Move(copyR, new TimePeriod(10, 50),
-        new Point2D(300, 300));
-
-    ITransformation scaleR = new Scale(copyR, new TimePeriod(51, 70),
-        new ShapeProperty(25, 100));
-
-    ITransformation moveC = new Move(copyC, new TimePeriod(20, 70),
-        new Point2D(500, 400));
-
-    ITransformation moveR1 = new Move(copyR, new TimePeriod(70, 100),
-        new Point2D(200, 200));
-    ITransformation changeColorC = new ChangeColor(copyC, new TimePeriod(50, 80),
-        new Color(0, 255, 0));
-
-    model.addTransformations(moveR);
-    model.addTransformations(moveR1);
-    model.addTransformations(scaleR);
-    model.addTransformations(moveC);
-    model.addTransformations(changeColorC);
-
-    TextView text = new TextView(model);
-    text.play();
-    System.out.println(text.getOutPut());
   }
 }

@@ -1,12 +1,16 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+import java.awt.Color;
 
-public class NoChange extends AbstractTransformation{
+/**
+ * This class represents no change.
+ */
+public class NoChange extends AbstractTransformation {
 
   private Point2D toPosition;
   private ShapeProperty toShapeProperty;
   private Color toColor;
+
   /**
    * Construct the initial cs5004.animator.model.AbstractTransformation.
    *
@@ -42,7 +46,8 @@ public class NoChange extends AbstractTransformation{
 
   @Override
   public String toString() {
-    String output = transShape.getName() + " stay same" + " from t=" + timePeriod.getStart() + " to t=" + timePeriod.getEnd();
+    String output = transShape.getName() + " stay same" + " from t=" + timePeriod.getStart()
+        + " to t=" + timePeriod.getEnd();
     return output;
   }
 }

@@ -1,10 +1,12 @@
 package cs5004.animator.util;
 
+import cs5004.animator.model.AnimationModel;
+
 import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-import cs5004.animator.model.AnimationModel;
+
 
 /**
  * A helper to read animation data and construct an animation from it.
@@ -30,8 +32,7 @@ public class AnimationReader {
    *
    * @param readable The source of data for the animation
    * @param builder  A builder for helping to construct a new animation
-   * @param <Doc>    The main model interface type describing animations
-   * @return
+   * @return AnimationModel
    */
   public static AnimationModel parseFile(Readable readable, AnimationBuilder builder) {
     Objects.requireNonNull(readable, "Must have non-null readable source");
@@ -85,14 +86,14 @@ public class AnimationReader {
 
   private static void readMotion(Scanner s, AnimationBuilder builder) {
     String[] fieldNames = new String[]{
-            "initial time",
-            "initial x-coordinate", "initial y-coordinate",
-            "initial width", "initial height",
-            "initial red value", "initial green value", "initial blue value",
-            "final time",
-            "final x-coordinate", "final y-coordinate",
-            "final width", "final height",
-            "final red value", "final green value", "final blue value",
+        "initial time",
+        "initial x-coordinate", "initial y-coordinate",
+        "initial width", "initial height",
+        "initial red value", "initial green value", "initial blue value",
+        "final time",
+        "final x-coordinate", "final y-coordinate",
+        "final width", "final height",
+        "final red value", "final green value", "final blue value",
     };
     int[] vals = new int[16];
     String name;

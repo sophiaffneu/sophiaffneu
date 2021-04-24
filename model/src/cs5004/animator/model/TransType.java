@@ -7,14 +7,14 @@ public enum TransType {
   MOVE, SCALE, CHANGECOLOR, NOCHANGE;
 
   @Override
-  public String toString(){
-    if(this == MOVE){
+  public String toString() {
+    if (this == MOVE) {
       return "move";
-    }else if(this == SCALE){
+    } else if (this == SCALE) {
       return "scale";
-    }else if(this == CHANGECOLOR){
+    } else if (this == CHANGECOLOR) {
       return "change color";
-    }else{
+    } else {
       return "no change";
     }
   }

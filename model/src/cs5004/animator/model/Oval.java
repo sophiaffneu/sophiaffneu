@@ -1,6 +1,6 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * One of the class that represent shape. This class represents oval.
@@ -14,11 +14,16 @@ public class Oval extends AbstractShape {
    * @param position      the position of the shape
    * @param color         the color of the shape
    * @param shapeProperty the shapeProperty of the shape
-     */
+   */
   public Oval(String name, Point2D position, Color color, ShapeProperty shapeProperty) {
     super(name, position, color, shapeProperty);
   }
 
+  /**
+   * Construct the initial oval.
+   *
+   * @param name name of the shape
+   */
   public Oval(String name) {
     super(name);
   }

@@ -1,12 +1,20 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
+import java.awt.Color;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
-import cs5004.animator.model.*;
+
+import cs5004.animator.model.IShape;
+import cs5004.animator.model.ITransformation;
+import cs5004.animator.model.Move;
+import cs5004.animator.model.Oval;
+import cs5004.animator.model.Point2D;
 import cs5004.animator.model.Rectangle;
+import cs5004.animator.model.ShapeProperty;
+import cs5004.animator.model.TimePeriod;
+import cs5004.animator.model.TransType;
 
 /**
  * A JUnit test for move class.

@@ -1,6 +1,6 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * An abstract transformation class.
@@ -11,7 +11,7 @@ public abstract class AbstractTransformation implements ITransformation {
   protected TimePeriod timePeriod;
   protected Point2D fromPosition;
   protected ShapeProperty fromShapeProperty;
- protected Color fromColor;
+  protected Color fromColor;
 
 
   /**
@@ -24,11 +24,6 @@ public abstract class AbstractTransformation implements ITransformation {
     if (transShape == null || timePeriod == null) {
       throw new IllegalArgumentException("Parameters can not be null.");
     }
-    /*if (timePeriod.getStart() < transShape.getPeriod().getStart()
-        || timePeriod.getEnd() > transShape.getPeriod().getEnd()) {
-      throw new IllegalArgumentException("The transformation can only happen when the shape is "
-          + "present.");
-    }*/
     this.transShape = transShape;
     this.timePeriod = timePeriod;
     this.fromPosition = transShape.getPosition();

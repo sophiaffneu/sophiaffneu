@@ -11,10 +11,10 @@ public class TimePeriod {
    * Construct the initial time period.
    *
    * @param start start time
-   * @param end end time
+   * @param end   end time
    */
   public TimePeriod(int start, int end) {
-    if (end > start && start >= 0 ) {
+    if (end >= start && start >= 0) {
       this.start = start;
       this.end = end;
     } else {

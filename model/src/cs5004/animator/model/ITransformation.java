@@ -1,6 +1,6 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * The interface for transformation.
@@ -45,6 +45,7 @@ public interface ITransformation {
    */
 
   ShapeProperty getShapeProperty();
+
   /**
    * Get the color of the shape before transformation.
    *
@@ -66,6 +67,7 @@ public interface ITransformation {
    */
 
   ShapeProperty getToShapeProperty();
+
   /**
    * Get the color of the shape after transformation.
    *

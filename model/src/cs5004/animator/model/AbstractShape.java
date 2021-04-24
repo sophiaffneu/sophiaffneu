@@ -1,6 +1,6 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * An abstract shape class.
@@ -12,11 +12,17 @@ public abstract class AbstractShape implements IShape {
   protected ShapeProperty shapeProperty;
   protected TimePeriod period;
 
+  /**
+   * Construct the initial abstract shape.
+   *
+   * @param name name of the shape
+   */
   public AbstractShape(String name) {
     this.name = name;
   }
+
   /**
-   * Construct the initial cs5004.animator.model.AbstractShape.
+   * Construct the initial abstract shape.
    *
    * @param name          the name of the shape.
    * @param position      the position of the shape.
@@ -24,18 +30,12 @@ public abstract class AbstractShape implements IShape {
    * @param shapeProperty the shapeProperties of the shape.
    */
   public AbstractShape(String name, Point2D position, Color color, ShapeProperty shapeProperty) {
-    //The position of the shape has to be within the canvas. Will check if input is valid when the
-    //canvas size info. is given in the coming assignments.
-    /**
-    if (name == null || position == null || color == null || shapeProperty == null) {
-      throw new IllegalArgumentException("Parameters can not be null.");
-    }*/
 
     this.name = name;
     this.position = position;
     this.color = color;
     this.shapeProperty = shapeProperty;
-      }
+  }
 
   @Override
   public String getName() {

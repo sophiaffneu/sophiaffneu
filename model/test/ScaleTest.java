@@ -1,12 +1,20 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
+import java.awt.Color;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
-import cs5004.animator.model.*;
+
+import cs5004.animator.model.IShape;
+import cs5004.animator.model.ITransformation;
+import cs5004.animator.model.Oval;
+import cs5004.animator.model.Point2D;
 import cs5004.animator.model.Rectangle;
+import cs5004.animator.model.Scale;
+import cs5004.animator.model.ShapeProperty;
+import cs5004.animator.model.TimePeriod;
+import cs5004.animator.model.TransType;
 
 /**
  * A JUnit test for scale class.
@@ -15,12 +23,11 @@ public class ScaleTest {
   private ITransformation s1;
   private ITransformation s2;
   private ITransformation illegalS;
-  private IShape r;
   private IShape c;
 
   @Before
   public void setup() {
-    r = new Rectangle("R", new Point2D(200, 200),
+    IShape r = new Rectangle("R", new Point2D(200, 200),
         new Color(1, 0, 0), new ShapeProperty(50, 100));
     c = new Oval("C", new Point2D(500, 100),
         new Color(0, 0, 1), new ShapeProperty(60, 30));

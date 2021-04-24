@@ -1,8 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import cs5004.animator.model.ShapeProperty;
+
 import static org.junit.Assert.assertEquals;
-import cs5004.animator.model.*;
+
 /**
  * A Junit test for shapeProperty.
  */

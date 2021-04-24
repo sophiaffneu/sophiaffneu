@@ -1,6 +1,7 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+
+import java.awt.Color;
 
 /**
  * One of the class that represents Transformation. This class scales the shape.
@@ -29,7 +30,7 @@ public class Scale extends AbstractTransformation {
     //The whole shape has to be within the canvas after the transformation. Will check if input
     // is valid when the canvas size info. is given in the coming assignments.
     if (newShapeProperty == null || (fromShapeProperty.getOne() == toShapeProperty.getOne()
-            && fromShapeProperty.getTwo() == toShapeProperty.getTwo())) {
+        && fromShapeProperty.getTwo() == toShapeProperty.getTwo())) {
       throw new IllegalArgumentException("Invalid shaper property parameter.");
     }
     transShape.setShapeProperty(newShapeProperty);
@@ -42,20 +43,20 @@ public class Scale extends AbstractTransformation {
     if (transShape.getShapeType() == ShapeType.RECTANGLE) {
       if (fromShapeProperty.getOne() != toShapeProperty.getOne()) {
         output += " changes width from " + fromShapeProperty.getOne()
-                + " to " + toShapeProperty.getOne();
+            + " to " + toShapeProperty.getOne();
       }
       if (fromShapeProperty.getTwo() != toShapeProperty.getTwo()) {
         output += " changes height from " + fromShapeProperty.getTwo()
-                + " to " + toShapeProperty.getTwo();
+            + " to " + toShapeProperty.getTwo();
       }
     } else {
       if (fromShapeProperty.getOne() != toShapeProperty.getOne()) {
         output += " changes X radius from " + fromShapeProperty.getOne()
-                + " to " + toShapeProperty.getOne();
+            + " to " + toShapeProperty.getOne();
       }
       if (fromShapeProperty.getTwo() != toShapeProperty.getTwo()) {
         output += " changes Y radius from " + fromShapeProperty.getTwo()
-                + " to " + toShapeProperty.getTwo();
+            + " to " + toShapeProperty.getTwo();
       }
     }
 

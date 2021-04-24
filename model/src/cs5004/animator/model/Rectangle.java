@@ -1,13 +1,13 @@
 package cs5004.animator.model;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * One of the class that represents a shape. This class represents rectangle.
  */
 public class Rectangle extends AbstractShape {
   /**
-   * Construct the initial cs5004.animator.model.AbstractShape.
+   * Construct the initial rectangle.
    *
    * @param name the name of the shape.
    */
@@ -32,7 +32,7 @@ public class Rectangle extends AbstractShape {
   @Override
   public IShape copyShape() {
     IShape newR = new Rectangle(this.getName(), this.getPosition(), this.getColor(),
-            this.shapeProperty);
+        this.shapeProperty);
     return newR;
   }
 
@@ -44,13 +44,13 @@ public class Rectangle extends AbstractShape {
   @Override
   public String toString() {
     String output = "Create (" + this.getColor().getRed() + ","
-            + this.getColor().getGreen() + ","
-            + this.getColor().getBlue() + ") "
-            + this.getShapeType() + " " + this.getName()
-            + " with corner at "
-            + this.getPosition().toString()
-            + ", width " + this.getShapeProperty().getOne()
-            + " and height " + this.getShapeProperty().getTwo();
+        + this.getColor().getGreen() + ","
+        + this.getColor().getBlue() + ") "
+        + this.getShapeType() + " " + this.getName()
+        + " with corner at "
+        + this.getPosition().toString()
+        + ", width " + this.getShapeProperty().getOne()
+        + " and height " + this.getShapeProperty().getTwo();
     return output;
   }
 }

@@ -1,11 +1,17 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
+
+import java.awt.Color;
 
 import static org.junit.Assert.assertEquals;
-import cs5004.animator.model.*;
+
+import cs5004.animator.model.IShape;
+import cs5004.animator.model.Oval;
+import cs5004.animator.model.Point2D;
 import cs5004.animator.model.Rectangle;
+import cs5004.animator.model.ShapeProperty;
+import cs5004.animator.model.ShapeType;
 
 /**
  * JUnit test for shape.
@@ -26,9 +32,11 @@ public class ShapeTest {
 
   @Test
   public void testToString() {
-    assertEquals("Create (1,0,0) rectangle R with corner at (200,200), width 50 and height 100", r1.toString());
+    assertEquals("Create (1,0,0) rectangle R with corner at (200,200"
+        + "), width 50 and height 100", r1.toString());
 
-    assertEquals("Create (0,0,1) oval C with center at (500,100), radius 60 and 30", o1.toString());
+    assertEquals("Create (0,0,1) oval C with center at (500,100"
+        + "), radius 60 and 30", o1.toString());
   }
 
   @Test
