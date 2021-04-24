@@ -39,6 +39,7 @@ public class VisualView extends JFrame implements IView, ActionListener {
     this.setSize(width, height);
     this.setLocation(x, y);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     this.startButton = new JButton("START");
     this.resumeButton = new JButton("RESUME");
     this.restartButton = new JButton("RESTART");
@@ -46,9 +47,18 @@ public class VisualView extends JFrame implements IView, ActionListener {
     this.increaseSpeedB = new JButton("INCREASE SPEED");
     this.decreaseSpeedB = new JButton("DECREASE SPEED");
     this.cycleButton = new JButton("CYCLE");
+
+    startButton.addActionListener(this);
+    resumeButton.addActionListener(this);
+    restartButton.addActionListener(this);
+    pauseButton.addActionListener(this);
+    increaseSpeedB.addActionListener(this);
+    decreaseSpeedB.addActionListener(this);
+    cycleButton.addActionListener(this);
+
     buttonPanel = new JPanel();
     buttonPanel.setBackground(Color.YELLOW);
-    buttonPanel.setBounds(120, 70, 700, 45);
+    buttonPanel.setBounds(200, 70, 700, 45);
     this.add(buttonPanel);
     buttonPanel.add(startButton);
     buttonPanel.add(resumeButton);
@@ -58,12 +68,7 @@ public class VisualView extends JFrame implements IView, ActionListener {
     buttonPanel.add(pauseButton);
     buttonPanel.add(cycleButton);
 
-    this.panel = new SwingPanel();
-    panel.setBackground(Color.WHITE);
-    panel.setBounds(120, 70, 30, 30);
-    panel.setLocation(120, 70);
-    panel.setBorder(new LineBorder(Color.BLACK, 2));
-    panel.setPreferredSize(new Dimension(width, height));
+    this.panel = new SwingPanel(width, height);
     this.add(this.panel);
     this.panel.setVisible(true);
 
@@ -107,24 +112,18 @@ public class VisualView extends JFrame implements IView, ActionListener {
       elapsedTime += 1000 / this.speed;
       timer = new Timer(1000 / speed, this);
       timer.start();
-       if (this.panel.getShapeAtTick() == null) {
-      timer.stop();
-    }
+      if (this.panel.getShapeAtTick() == null) {
+        timer.stop();
+      }
       this.refresh();
-    }
+    } else if (e.getSource() == restartButton) {
 
-    else if (e.getSource() == restartButton) {
+    } else if (e.getSource() == resumeButton) {
 
-    }
-
-    else if (e.getSource() == resumeButton) {
+    } else if (e.getSource() == increaseSpeedB) {
 
     }
-
-    else if (e.getSource() == increaseSpeedB) {
-
-    }
-  //  ... keep adding more buttons
+    //  ... keep adding more buttons
 
 
   }

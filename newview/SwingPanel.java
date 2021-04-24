@@ -22,10 +22,10 @@ public class SwingPanel extends JPanel {
    * @param width  width of the canvas.
    * @param height height of the canvas.
    */
-  public SwingPanel() {
+  public SwingPanel(int width, int height) {
     super(true);
-    setBackground(Color.BLUE);
-    setBounds(120, 70, 30 , 30);
+    setBackground(Color.WHITE);
+    setBounds(120, 70, width , width);
     setLocation(120, 70);
     setBorder(new LineBorder(Color.BLACK, 2));
   }
