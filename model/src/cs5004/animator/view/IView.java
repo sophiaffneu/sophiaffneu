@@ -1,6 +1,6 @@
 package cs5004.animator.view;
 
-import javax.swing.JButton;
+import javax.swing.*;
 
 /**
  * A interface for the "text", "visual", "svg" and "playback" views. The view interface contains all
@@ -69,18 +69,18 @@ public interface IView {
   JButton getRestartButton();
 
   /**
-   * Return the increase speed button.
+   * Return the slider of speed.
    *
-   * @return the increase speed button
+   * @return the slider of speed.
    */
-  JButton getIncreaseSpeedB();
+  JSlider getSlider();
 
   /**
-   * Return the decrease speed button.
+   * Return the label.
    *
-   * @return the decrease speed button
+   * @return the label.
    */
-  JButton getDecreaseSpeedB();
+  JLabel getLabel();
 
   /**
    * Return the cycle button.

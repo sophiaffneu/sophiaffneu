@@ -1,13 +1,14 @@
 package cs5004.animator.view;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.Timer;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.stream.Collectors;
+
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+
+import cs5004.animator.model.IShape;
 
 
 /**
@@ -19,16 +20,12 @@ public class NewView extends JFrame implements IView {
   private Timer timer;
   private int elapsedTime;
   private int speed;
-  private JButton startButton;
-  private JButton resumeButton;
-  private JButton pauseButton;
-  private JButton restartButton;
-  private JButton increaseSpeedB;
-  private JButton decreaseSpeedB;
-  private JButton cycleButton;
-  private JButton stopCycleButton;
+  private JButton startButton, resumeButton, pauseButton, restartButton, cycleButton,
+          stopCycleButton;
   private JButton saveSVGButton;
   private JButton saveTextButton;
+  private JLabel label;
+  private JSlider slider;
 
   /**
    * Construct a visual view.
@@ -52,35 +49,49 @@ public class NewView extends JFrame implements IView {
     this.resumeButton = new JButton("RESUME");
     this.restartButton = new JButton("RESTART");
     this.pauseButton = new JButton("PAUSE");
-    this.increaseSpeedB = new JButton("INCREASE SPEED");
-    this.decreaseSpeedB = new JButton("DECREASE SPEED");
     this.cycleButton = new JButton("CYCLE");
     this.stopCycleButton = new JButton("STOPCYCLE");
     this.saveSVGButton = new JButton("SAVESVG");
     this.saveTextButton = new JButton("SAVETEXT");
+    this.slider = new JSlider(0, 100, speed);
+    this.label = new JLabel();
+    label.setHorizontalAlignment(SwingConstants.CENTER);
+
+    slider.setBounds(x,y, width, 10);
+    slider.setPaintTicks(true);
+    slider.setMinorTickSpacing(5);
+
+    slider.setPaintTrack(true);
+    slider.setMajorTickSpacing(10);
+
+    slider.setPaintLabels(true);
 
     buttonPanel = new JPanel();
     buttonPanel.setBackground(Color.YELLOW);
-    buttonPanel.setBounds(0, 0, width, 45);
+    buttonPanel.setBounds(x, y, width, 45);
+    buttonPanel.setLayout(new GridLayout(2, 3));
     this.add(buttonPanel);
     buttonPanel.add(startButton);
     buttonPanel.add(pauseButton);
     buttonPanel.add(resumeButton);
     buttonPanel.add(restartButton);
-    buttonPanel.add(increaseSpeedB);
-    buttonPanel.add(decreaseSpeedB);
     buttonPanel.add(cycleButton);
     buttonPanel.add(stopCycleButton);
     buttonPanel.add(saveSVGButton);
     buttonPanel.add(saveTextButton);
+    buttonPanel.add(slider);
+    buttonPanel.add(label);
+
+    label.setText("Current Speed = " + slider.getValue());
 
     this.panel = new SwingPanel(width, height);
     panel.add(buttonPanel);
+    panel.add(slider);
     this.add(this.panel);
     this.panel.setVisible(true);
 
     JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-        ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
     scrollPane.setPreferredSize(new Dimension(width, height));
     this.add(scrollPane);
 
@@ -103,50 +114,34 @@ public class NewView extends JFrame implements IView {
 
   @Override
   public String getOutPut() {
-    throw new UnsupportedOperationException("unsupported");
+    return null;
   }
 
   @Override
   public void play() {
-    throw new UnsupportedOperationException("unsupported");
+    // interface requirement
   }
 
-  @Override
   public JButton getStartButton() {
     return startButton;
   }
 
-  @Override
   public JButton getResumeButton() {
     return resumeButton;
   }
 
-  @Override
   public JButton getPauseButton() {
     return pauseButton;
   }
 
-  @Override
   public JButton getRestartButton() {
     return restartButton;
   }
 
-  @Override
-  public JButton getIncreaseSpeedB() {
-    return increaseSpeedB;
-  }
-
-  @Override
-  public JButton getDecreaseSpeedB() {
-    return decreaseSpeedB;
-  }
-
-  @Override
   public JButton getCycleButton() {
     return cycleButton;
   }
 
-  @Override
   public JButton getStopCycleButton() {
     return stopCycleButton;
   }
@@ -160,4 +155,13 @@ public class NewView extends JFrame implements IView {
   public JButton getSaveTextButton() {
     return saveTextButton;
   }
+
+  public JSlider getSlider() {
+    return slider;
+  }
+
+  public JLabel getLabel() {
+    return label;
+  }
+
 }
