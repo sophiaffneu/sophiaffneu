@@ -1,9 +1,11 @@
 package cs5004.animator.view;
 
 import java.awt.Dimension;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+
 
 
 /**
@@ -56,11 +58,61 @@ public class VisualView extends JFrame implements IView {
 
   @Override
   public String getOutPut() {
-    return null;
+    throw new UnsupportedOperationException("unsupported");
   }
 
   @Override
   public void play() {
-    // interface requirement
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getStartButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getResumeButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getPauseButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getRestartButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getIncreaseSpeedB() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getDecreaseSpeedB() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getCycleButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getStopCycleButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getSaveSVGButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getSaveTextButton() {
+    throw new UnsupportedOperationException("unsupported");
   }
 }

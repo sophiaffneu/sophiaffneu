@@ -26,15 +26,15 @@ public class MainForTestingView {
     AnimationModel model;
     AnimationReader reader = new AnimationReader();
 
-    FileReader objReader =new FileReader("E:\\IdeaProjects\\Assignments\\Assignment7\\src\\txt\\smalldemo" +
+    FileReader objReader =new FileReader("E:\\IdeaProjects\\Assignments\\Assignment7\\src\\txt\\buildings" +
             ".txt");
 
     int tick = 1;
 
     model = AnimationReader.parseFile(objReader, builder);
     IView v  = new NewView(200,70, 420,550, 50);
-    AnimatorController animatorController = new AnimatorController(v, model, 10);
-    animatorController.go(v);
+    AnimatorController animatorController = new AnimatorController(v, model, 50);
+    animatorController.goToView(v);
   }
 
 }

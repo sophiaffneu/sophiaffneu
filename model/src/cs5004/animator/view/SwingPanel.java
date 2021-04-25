@@ -3,7 +3,9 @@ package cs5004.animator.view;
 import cs5004.animator.model.IShape;
 import cs5004.animator.model.ShapeType;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JPanel;
@@ -33,11 +35,11 @@ public class SwingPanel extends JPanel {
   /**
    * Construct a swing panel.
    */
- /* public SwingPanel() {
+  /* public SwingPanel() {
     super(true);
     setBackground(Color.WHITE);
     setBorder(new LineBorder(Color.BLACK, 2));
-  }*/
+   }*/
 
   /**
    * Set the shape list at a certain tick.

@@ -36,9 +36,9 @@ public class EasyAnimator {
     Appendable out = System.out;
 
     if (!(Arrays.asList(args).contains("-in")
-            && Arrays.asList(args).contains("-view"))) {
+        && Arrays.asList(args).contains("-view"))) {
       JOptionPane.showMessageDialog(null,
-              "input and view needed");
+          "input and view needed");
     }
 
     for (int i = 0; i < args.length; i++) {
@@ -90,14 +90,14 @@ public class EasyAnimator {
     model = AnimationReader.parseFile(in, builder);
     IView view = new ViewFactory().generateView(viewType, model, tick);
     AnimatorController animatorController = new AnimatorController(view, model, tick);
-    animatorController.go(view);
+    animatorController.goToView(view);
 
     try {
       if (writer != null) {
         writer.write(view.getOutPut());
         writer.close();
       } else {
-        if (!view.getViewType().equals("visual")) {
+        if (!view.getViewType().equals("visual") && !(view.getViewType().equals("playback"))) {
           out.append(view.getOutPut());
         }
       }

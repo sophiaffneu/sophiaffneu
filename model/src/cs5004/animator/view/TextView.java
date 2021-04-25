@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.swing.JButton;
 
 /**
  * This is a TextView class. It represents a text of animation.
@@ -30,12 +31,12 @@ public class TextView implements IView {
 
   @Override
   public SwingPanel getPanel() {
-    return null;
+    throw new UnsupportedOperationException("unsupported");
   }
 
   @Override
   public void refresh() {
-    // interface requirement
+    throw new UnsupportedOperationException("unsupported");
   }
 
   @Override
@@ -83,5 +84,57 @@ public class TextView implements IView {
 
     }
     outputTemp = output;
+  }
+
+
+
+  @Override
+  public JButton getStartButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getResumeButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getPauseButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getRestartButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getIncreaseSpeedB() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getDecreaseSpeedB() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getCycleButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getStopCycleButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getSaveSVGButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getSaveTextButton() {
+    throw new UnsupportedOperationException("unsupported");
   }
 }

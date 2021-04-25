@@ -5,6 +5,7 @@ import cs5004.animator.model.ITransformation;
 import cs5004.animator.model.ShapeType;
 
 import java.util.List;
+import javax.swing.JButton;
 
 /**
  * This is a SVGView class. It represents the svg of the animation.
@@ -53,12 +54,12 @@ public class SVGView implements IView {
 
   @Override
   public SwingPanel getPanel() {
-    return null;
+    throw new UnsupportedOperationException("unsupported");
   }
 
   @Override
   public void refresh() {
-    // interface requirement
+    throw new UnsupportedOperationException("unsupported");
   }
 
   @Override
@@ -226,5 +227,55 @@ public class SVGView implements IView {
 
     }
     return output;
+  }
+
+  @Override
+  public JButton getStartButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getResumeButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getPauseButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getRestartButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getIncreaseSpeedB() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getDecreaseSpeedB() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getCycleButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getStopCycleButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getSaveSVGButton() {
+    throw new UnsupportedOperationException("unsupported");
+  }
+
+  @Override
+  public JButton getSaveTextButton() {
+    throw new UnsupportedOperationException("unsupported");
   }
 }

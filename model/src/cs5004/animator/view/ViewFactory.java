@@ -24,6 +24,8 @@ public class ViewFactory {
       case "visual":
         return new VisualView(model.getX(), model.getY(), model.getWidth(), model.getHeight(),
             tempo);
+      case "playback":
+        return new NewView(model.getX(),model.getY(),model.getWidth(),model.getHeight(),tempo);
       default:
         return null;
     }

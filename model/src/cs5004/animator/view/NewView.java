@@ -1,14 +1,13 @@
 package cs5004.animator.view;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.stream.Collectors;
-
-import javax.swing.*;
-import javax.swing.border.LineBorder;
-
-import cs5004.animator.model.IShape;
+import java.awt.Color;
+import java.awt.Dimension;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.Timer;
 
 
 /**
@@ -20,8 +19,16 @@ public class NewView extends JFrame implements IView {
   private Timer timer;
   private int elapsedTime;
   private int speed;
-  private JButton startButton, resumeButton, pauseButton, restartButton, increaseSpeedB,
-          decreaseSpeedB, cycleButton;
+  private JButton startButton;
+  private JButton resumeButton;
+  private JButton pauseButton;
+  private JButton restartButton;
+  private JButton increaseSpeedB;
+  private JButton decreaseSpeedB;
+  private JButton cycleButton;
+  private JButton stopCycleButton;
+  private JButton saveSVGButton;
+  private JButton saveTextButton;
 
   /**
    * Construct a visual view.
@@ -48,10 +55,13 @@ public class NewView extends JFrame implements IView {
     this.increaseSpeedB = new JButton("INCREASE SPEED");
     this.decreaseSpeedB = new JButton("DECREASE SPEED");
     this.cycleButton = new JButton("CYCLE");
+    this.stopCycleButton = new JButton("STOPCYCLE");
+    this.saveSVGButton = new JButton("SAVESVG");
+    this.saveTextButton = new JButton("SAVETEXT");
 
     buttonPanel = new JPanel();
     buttonPanel.setBackground(Color.YELLOW);
-    buttonPanel.setBounds(200, 70, 700, 45);
+    buttonPanel.setBounds(0, 0, width, 45);
     this.add(buttonPanel);
     buttonPanel.add(startButton);
     buttonPanel.add(pauseButton);
@@ -60,13 +70,17 @@ public class NewView extends JFrame implements IView {
     buttonPanel.add(increaseSpeedB);
     buttonPanel.add(decreaseSpeedB);
     buttonPanel.add(cycleButton);
+    buttonPanel.add(stopCycleButton);
+    buttonPanel.add(saveSVGButton);
+    buttonPanel.add(saveTextButton);
 
     this.panel = new SwingPanel(width, height);
+    panel.add(buttonPanel);
     this.add(this.panel);
     this.panel.setVisible(true);
 
     JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
     scrollPane.setPreferredSize(new Dimension(width, height));
     this.add(scrollPane);
 
@@ -84,45 +98,66 @@ public class NewView extends JFrame implements IView {
 
   @Override
   public String getViewType() {
-    return "newview";
+    return "playback";
   }
 
   @Override
   public String getOutPut() {
-    return null;
+    throw new UnsupportedOperationException("unsupported");
   }
 
   @Override
   public void play() {
-    // interface requirement
+    throw new UnsupportedOperationException("unsupported");
   }
 
+  @Override
   public JButton getStartButton() {
     return startButton;
   }
 
+  @Override
   public JButton getResumeButton() {
     return resumeButton;
   }
 
+  @Override
   public JButton getPauseButton() {
     return pauseButton;
   }
 
+  @Override
   public JButton getRestartButton() {
     return restartButton;
   }
 
+  @Override
   public JButton getIncreaseSpeedB() {
     return increaseSpeedB;
   }
 
+  @Override
   public JButton getDecreaseSpeedB() {
     return decreaseSpeedB;
   }
 
+  @Override
   public JButton getCycleButton() {
     return cycleButton;
   }
 
+  @Override
+  public JButton getStopCycleButton() {
+    return stopCycleButton;
+  }
+
+  @Override
+  public JButton getSaveSVGButton() {
+    return saveSVGButton;
+  }
+
+  @Override
+  public JButton getSaveTextButton() {
+    return saveTextButton;
+  }
 }

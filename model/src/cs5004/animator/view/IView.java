@@ -1,9 +1,11 @@
 package cs5004.animator.view;
 
+import javax.swing.JButton;
+
 /**
- * A interface for the "text", "visual" and "svg" views. The view interface contains all
- * functionalities for the three views and then individual views suppress or provide defaults for
- * functionalities they do not implement.
+ * A interface for the "text", "visual", "svg" and "playback" views. The view interface contains all
+ * functionalities for the four views and then individual views suppress or
+ * throw UnsupportedOperationException for functionalities they do not implement.
  */
 public interface IView {
 
@@ -38,4 +40,73 @@ public interface IView {
    */
   void play();
 
+  /**
+   * Return the start button.
+   *
+   * @return the start button
+   */
+  JButton getStartButton();
+
+  /**
+   * Return the resume button.
+   *
+   * @return the resume button
+   */
+  JButton getResumeButton();
+
+  /**
+   * Return the pause button.
+   *
+   * @return the pause button
+   */
+  JButton getPauseButton();
+
+  /**
+   * Return the restart button.
+   *
+   * @return the restart button
+   */
+  JButton getRestartButton();
+
+  /**
+   * Return the increase speed button.
+   *
+   * @return the increase speed button
+   */
+  JButton getIncreaseSpeedB();
+
+  /**
+   * Return the decrease speed button.
+   *
+   * @return the decrease speed button
+   */
+  JButton getDecreaseSpeedB();
+
+  /**
+   * Return the cycle button.
+   *
+   * @return the cycle button
+   */
+  JButton getCycleButton();
+
+  /**
+   * Return the stop cycle button.
+   *
+   * @return the stop cycle button
+   */
+  JButton getStopCycleButton();
+
+  /**
+   * Return the save svg button.
+   *
+   * @return the save svg button
+   */
+  JButton getSaveSVGButton();
+
+  /**
+   * Return the save text button.
+   *
+   * @return the save text button
+   */
+  JButton getSaveTextButton();
 }
