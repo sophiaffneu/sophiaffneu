@@ -67,10 +67,6 @@ public class SVGView implements IView {
     return "svg";
   }
 
-  /**
-   * public void loopOrNot(boolean loop, int endTime) { this.loop = loop; this.endTime = endTime; }
-   */
-
   @Override
   public String getOutPut() {
     return outputTemp;
