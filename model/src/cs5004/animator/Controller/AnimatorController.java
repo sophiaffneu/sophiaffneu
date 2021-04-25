@@ -1,4 +1,4 @@
-package cs5004.animator.controller;
+package cs5004.animator.Controller;
 
 import cs5004.animator.model.IAnimator;
 import cs5004.animator.model.IShape;
@@ -11,14 +11,17 @@ import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 
 /**
  * This class represents an animation controller.
  */
-public class AnimatorController implements ActionListener {
+public class AnimatorController implements ActionListener, ChangeListener {
 
   IAnimator m;
   IView v;
@@ -47,7 +50,7 @@ public class AnimatorController implements ActionListener {
    */
   public void goToView(IView v) {
     if (v.getViewType().equals("text")
-        || v.getViewType().equals("svg")) {
+            || v.getViewType().equals("svg")) {
       v.play();
     } else if (v.getViewType().equals("visual")) {
       timer = new Timer(1000 / speed, this);
@@ -57,10 +60,9 @@ public class AnimatorController implements ActionListener {
       v.getResumeButton().addActionListener(this);
       v.getRestartButton().addActionListener(this);
       v.getPauseButton().addActionListener(this);
-      v.getIncreaseSpeedB().addActionListener(this);
-      v.getDecreaseSpeedB().addActionListener(this);
       v.getCycleButton().addActionListener(this);
       v.getStopCycleButton().addActionListener(this);
+      v.getSlider().addChangeListener(this);
       v.getSaveSVGButton().addActionListener(this);
       v.getSaveTextButton().addActionListener(this);
     }
@@ -80,8 +82,17 @@ public class AnimatorController implements ActionListener {
       } else if (e.getSource() == v.getStartButton()) {
         if (timer == null) {
           timer = new Timer(1000 / speed, this);
-          timer.start();
         }
+          timer.start();
+
+        elapsedTime = 0;
+        elapsedTime += 1000 / this.speed;
+        List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime, speed);
+        v.getPanel().setShapeAtTick(shapeAtTick);
+        if (shapeAtTick == null) {
+          timer.stop();
+        }
+        v.refresh();
       } else if (e.getSource() == v.getRestartButton()) {
         if (timer != null) {
           timer.start();
@@ -97,27 +108,31 @@ public class AnimatorController implements ActionListener {
       } else if (e.getSource() == timer) {
         elapsedTime += 1000 / this.speed;
         List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime, speed);
-        if (e.getSource() == v.getIncreaseSpeedB()
-            || e.getSource() == v.getDecreaseSpeedB()) {
-          // speed =
-          elapsedTime += 1000 / this.speed;
-          shapeAtTick = m.getShapeAtTick(elapsedTime, speed);
-        }
-        v.getPanel().setShapeAtTick(shapeAtTick);
         if (shapeAtTick == null) {
           if (cycleFlag) {
             elapsedTime = 0;
+            shapeAtTick = m.getShapeAtTick(elapsedTime, speed);
           } else {
             timer.stop();
+            return;
           }
         }
+        v.getPanel().setShapeAtTick(shapeAtTick);
         v.refresh();
       } else if (e.getSource() == v.getCycleButton()) {
         cycleFlag = true;
         if (timer == null) {
           timer = new Timer(1000 / speed, this);
-          timer.start();
         }
+        timer.start();
+        elapsedTime = 0;
+        elapsedTime += 1000 / this.speed;
+        List<IShape> shapeAtTick = m.getShapeAtTick(elapsedTime, speed);
+        v.getPanel().setShapeAtTick(shapeAtTick);
+        if (shapeAtTick == null) {
+          timer.stop();
+        }
+        v.refresh();
       } else if (e.getSource() == v.getStopCycleButton()) {
         cycleFlag = false;
         timer.stop();
@@ -156,7 +171,7 @@ public class AnimatorController implements ActionListener {
     }
 
     SVGView view = new SVGView(m.getShapeList(), m.getTransList(), speed,
-        m.getWidth(), m.getHeight(), m.getX(), m.getY());
+            m.getWidth(), m.getHeight(), m.getX(), m.getY());
     view.play();
     writer.write(view.getOutPut());
     writer.close();
@@ -174,19 +189,16 @@ public class AnimatorController implements ActionListener {
     writer.write(view.getOutPut());
     writer.close();
   }
+
+
+  @Override
+  public void stateChanged(ChangeEvent e) {
+    speed = v.getSlider().getValue();
+    if (timer != null)
+      timer.setDelay(1000 / speed);
+    v.getLabel().setText("Current Speed = " + v.getSlider().getValue());
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
