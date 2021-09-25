@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
+            "outputFile": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\sophiaffneu\\Android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\fang fang\\.gradle\\caches\\transforms-3\\6e2911ff4a96486920a1a70539b6e472\\transformed\\firebase-messaging-22.0.0\\res\\values-mr\\values.xml",

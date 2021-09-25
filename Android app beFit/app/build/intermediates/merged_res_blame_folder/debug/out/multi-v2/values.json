@@ -1,23 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\sophiaffneu\\Android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\sophiaffneu\\Android app beFit\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "7,10,9,2,3,4,5,6,11,12,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "293,416,379,57,105,153,201,247,456,500,336",
-                        "endColumns": "41,38,35,46,46,46,44,44,42,42,41",
-                        "endOffsets": "330,450,410,99,147,195,241,287,494,538,373"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "20",
+                        "endColumns": "12",
+                        "endOffsets": "1017"
                     },
                     "to": {
-                        "startLines": "420,421,489,522,523,524,535,536,537,538,541",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "20401,20443,25261,27389,27436,27483,28227,28272,28317,28360,28524",
-                        "endColumns": "41,38,35,46,46,46,44,44,42,42,41",
-                        "endOffsets": "20438,20477,25292,27431,27478,27525,28267,28312,28355,28398,28561"
+                        "startLines": "3930",
+                        "startColumns": "4",
+                        "startOffsets": "260334",
+                        "endLines": "3948",
+                        "endColumns": "12",
+                        "endOffsets": "261229"
                     }
                 },
                 {
@@ -114,7 +116,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\sophiaffneu\\Android app beFit\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "13,4,34,8,51,37,31,41,21,35,3,24,30,26,20,36,25,40,56,55,6,60,19,10,39,22,1,49,18,48,14,5,44,58,29,50,12,17,38,33,45,9,52,59,32,15,42,16,7,57,53,54,47,28,23,27,2,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -220,22 +222,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\sophiaffneu\\Android app beFit\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "20",
-                        "endColumns": "12",
-                        "endOffsets": "1017"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,709",
+                        "endColumns": "143,81,103,108,119,94,71",
+                        "endOffsets": "194,276,380,489,609,704,776"
                     },
                     "to": {
-                        "startLines": "3930",
-                        "startColumns": "4",
-                        "startOffsets": "260334",
-                        "endLines": "3948",
-                        "endColumns": "12",
-                        "endOffsets": "261229"
+                        "startLines": "1195,1204,1207,1208,1209,1210,1282",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "71889,72715,72904,73008,73117,73237,84227",
+                        "endColumns": "143,81,103,108,119,94,71",
+                        "endOffsets": "72028,72792,73003,73112,73232,73327,84294"
                     }
                 },
                 {
@@ -313,6 +313,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\sophiaffneu\\Android app beFit\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,10,9,2,3,4,5,6,11,12,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "293,416,379,57,105,153,201,247,456,500,336",
+                        "endColumns": "41,38,35,46,46,46,44,44,42,42,41",
+                        "endOffsets": "330,450,410,99,147,195,241,287,494,538,373"
+                    },
+                    "to": {
+                        "startLines": "420,421,489,522,523,524,535,536,537,538,541",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "20401,20443,25261,27389,27436,27483,28227,28272,28317,28360,28524",
+                        "endColumns": "41,38,35,46,46,46,44,44,42,42,41",
+                        "endOffsets": "20438,20477,25292,27431,27478,27525,28267,28312,28355,28398,28561"
+                    }
+                },
+                {
                     "source": "C:\\Users\\fang fang\\.gradle\\caches\\transforms-3\\a6ed9dfb3abf7d8541f7a1d01bf1d39b\\transformed\\core-1.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,88,89,93,94,95,96,103,151,183,220",
@@ -365,23 +382,6 @@
                         "startOffsets": "60335,60392,61786",
                         "endColumns": "56,42,40",
                         "endOffsets": "60387,60430,61822"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,709",
-                        "endColumns": "143,81,103,108,119,94,71",
-                        "endOffsets": "194,276,380,489,609,704,776"
-                    },
-                    "to": {
-                        "startLines": "1195,1204,1207,1208,1209,1210,1282",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "71889,72715,72904,73008,73117,73237,84227",
-                        "endColumns": "143,81,103,108,119,94,71",
-                        "endOffsets": "72028,72792,73003,73112,73232,73327,84294"
                     }
                 },
                 {
