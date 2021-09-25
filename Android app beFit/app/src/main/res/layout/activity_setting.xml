@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="375dp"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonFitness5"
+            android:layout_width="11dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_baseline_directions_run_24" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHeart5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLaunch5"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+        <ImageButton
+            android:id="@+id/imageBadge5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_baseline_group_24" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSetting5"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B87C68"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="261dp"
+        android:layout_height="80dp"
+        android:text="Thank You for Using BeFit More Features Coming Soon"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

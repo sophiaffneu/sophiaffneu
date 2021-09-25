@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_fitness_test_detail.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\src\\main\\res\\layout\\activity_fitness_test_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_fitness_test_history.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\src\\main\\res\\layout\\activity_fitness_test_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_get_plan.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\src\\main\\res\\layout\\activity_get_plan.xml"
+    },
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

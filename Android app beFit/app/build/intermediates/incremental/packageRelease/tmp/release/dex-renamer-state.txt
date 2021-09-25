@@ -1,0 +1,7 @@
+#Fri Sep 24 11:29:05 PDT 2021
+base.1=C\:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.1=classes2.dex
+base.0=C\:\\Users\\fang fang\\Desktop\\neu\\cs 5520 phone app\\5520-group-befit\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_get_plan.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\layout\\activity_get_plan.xml"
+    },
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fitness_test_history.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\layout\\activity_fitness_test_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fitness_test_detail.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\layout\\activity_fitness_test_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\fang fang\\Desktop\\neu\\job hunting\\github\\android app beFit\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

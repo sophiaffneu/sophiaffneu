@@ -1,0 +1,452 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.befitgroupproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:6:22-62
+13
+14    <uses-feature android:name="android.hardware.camera" />
+14-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:8:5-60
+14-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:8:19-57
+15    <uses-feature android:name="android.hardware.camera.autofocus" />
+15-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:9:5-70
+15-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:9:19-67
+16
+17    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+18    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:25:5-79
+19-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:25:22-76
+20    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+20-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:26:5-67
+20-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:26:22-64
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+21-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:26:22-107
+23
+24    <application
+24-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:11:5-74:19
+25        android:allowBackup="true"
+25-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:12:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:13:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:14:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:15:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:16:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.BeFitGroupProject" >
+34-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:17:9-55
+35        <activity
+35-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:18:9-22:52
+36            android:name="com.example.befitgroupproject.display_otherplans"
+36-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:19:13-47
+37            android:configChanges="orientation"
+37-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:20:13-48
+38            android:exported="true"
+38-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:21:13-36
+39            android:screenOrientation="portrait" />
+39-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:22:13-49
+40        <activity
+40-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:23:9-27:52
+41            android:name="com.example.befitgroupproject.PunchCardActivity"
+41-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:24:13-46
+42            android:configChanges="orientation"
+42-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:25:13-48
+43            android:exported="true"
+43-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:26:13-36
+44            android:screenOrientation="portrait" />
+44-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:27:13-49
+45        <activity
+45-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:28:9-32:52
+46            android:name="com.example.befitgroupproject.other_plans"
+46-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:29:13-40
+47            android:configChanges="orientation"
+47-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:30:13-48
+48            android:exported="true"
+48-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:31:13-36
+49            android:screenOrientation="portrait" />
+49-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:32:13-49
+50        <activity
+50-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:33:9-37:52
+51            android:name="com.example.befitgroupproject.LaunchActivity"
+51-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:34:13-43
+52            android:configChanges="orientation"
+52-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:35:13-48
+53            android:exported="true"
+53-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:36:13-36
+54            android:screenOrientation="portrait" />
+54-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:37:13-49
+55        <activity
+55-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:38:9-42:52
+56            android:name="com.example.befitgroupproject.SettingActivity"
+56-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:39:13-44
+57            android:configChanges="orientation"
+57-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:40:13-48
+58            android:exported="true"
+58-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:41:13-36
+59            android:screenOrientation="portrait" />
+59-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:42:13-49
+60        <activity
+60-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:43:9-47:52
+61            android:name="com.example.befitgroupproject.HeartRateActivity"
+61-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:44:13-46
+62            android:configChanges="orientation"
+62-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:45:13-48
+63            android:exported="true"
+63-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:46:13-36
+64            android:screenOrientation="portrait" />
+64-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:47:13-49
+65        <activity
+65-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:48:9-51:52
+66            android:name="com.example.befitgroupproject.get_plan"
+66-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:49:13-37
+67            android:configChanges="orientation"
+67-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:50:13-48
+68            android:screenOrientation="portrait" />
+68-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:51:13-49
+69        <activity
+69-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:52:9-55:52
+70            android:name="com.example.befitgroupproject.fitness_test_detail"
+70-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:53:13-48
+71            android:configChanges="orientation"
+71-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:54:13-48
+72            android:screenOrientation="portrait" />
+72-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:55:13-49
+73        <activity
+73-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:56:9-59:52
+74            android:name="com.example.befitgroupproject.fitness_test_history"
+74-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:57:13-49
+75            android:configChanges="orientation"
+75-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:58:13-48
+76            android:screenOrientation="portrait" />
+76-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:59:13-49
+77        <activity
+77-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:60:9-69:20
+78            android:name="com.example.befitgroupproject.MainActivity"
+78-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:61:13-41
+79            android:configChanges="orientation"
+79-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:62:13-48
+80            android:screenOrientation="portrait" >
+80-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:63:13-49
+81            <intent-filter>
+81-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:64:13-68:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:65:17-69
+82-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:65:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:67:17-77
+84-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:67:27-74
+85            </intent-filter>
+86        </activity>
+87        <activity
+87-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:70:9-73:52
+88            android:name="com.example.befitgroupproject.BadgeActivity"
+88-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:71:13-42
+89            android:configChanges="orientation"
+89-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:72:13-48
+90            android:screenOrientation="portrait" />
+90-->C:\Users\fang fang\Desktop\neu\job hunting\github\android app beFit\app\src\main\AndroidManifest.xml:73:13-49
+91
+92        <service
+92-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:29:9-35:19
+93            android:name="com.google.firebase.components.ComponentDiscoveryService"
+93-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:30:13-84
+94            android:directBootAware="true"
+94-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+95            android:exported="false" >
+95-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:31:13-37
+96            <meta-data
+96-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:32:13-34:85
+97                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+97-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:33:17-109
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:34:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+100                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:20:13-22:85
+103                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+103-->[com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:21:17-111
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:22:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+106                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+106-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+109                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+109-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+111            <meta-data
+111-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:30:13-32:85
+112                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+112-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:31:17-139
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:32:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+115                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+115-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+117        </service>
+118
+119        <activity
+119-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+120            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+120-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+121            android:excludeFromRecents="true"
+121-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+122            android:exported="true"
+122-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+123            android:launchMode="singleTask"
+123-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+124-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+125            <intent-filter>
+125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+126                <action android:name="android.intent.action.VIEW" />
+126-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+126-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+127
+128                <category android:name="android.intent.category.DEFAULT" />
+128-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+128-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+129                <category android:name="android.intent.category.BROWSABLE" />
+129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+130
+131                <data
+131-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+132                    android:host="firebase.auth"
+132-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+133                    android:path="/"
+133-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+134                    android:scheme="genericidp" />
+134-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+135            </intent-filter>
+136        </activity>
+137        <activity
+137-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+138            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+138-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+139            android:excludeFromRecents="true"
+139-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+140            android:exported="true"
+140-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+141            android:launchMode="singleTask"
+141-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+142            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+142-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+143            <intent-filter>
+143-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+144                <action android:name="android.intent.action.VIEW" />
+144-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+144-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+145
+146                <category android:name="android.intent.category.DEFAULT" />
+146-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+146-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+147                <category android:name="android.intent.category.BROWSABLE" />
+147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+148
+149                <data
+149-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+150                    android:host="firebase.auth"
+150-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+151                    android:path="/"
+151-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+152                    android:scheme="recaptcha" />
+152-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+153            </intent-filter>
+154        </activity>
+155
+156        <service
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+157            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+158            android:enabled="true"
+158-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+159            android:exported="false" >
+159-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+160            <intent-filter>
+160-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+161                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+161-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+161-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+162
+163                <category android:name="android.intent.category.DEFAULT" />
+163-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+163-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+164            </intent-filter>
+165        </service>
+166
+167        <receiver
+167-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+168            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+168-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+169            android:exported="true"
+169-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+170            android:permission="com.google.android.c2dm.permission.SEND" >
+170-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+171            <intent-filter>
+171-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+172                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+172-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+172-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+173            </intent-filter>
+174        </receiver>
+175        <!--
+176             FirebaseMessagingService performs security checks at runtime,
+177             but set to not exported to explicitly avoid allowing another app to call it.
+178        -->
+179        <service
+179-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+180            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+180-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+181            android:directBootAware="true"
+181-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+182            android:exported="false" >
+182-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+183            <intent-filter android:priority="-500" >
+183-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
+183-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
+184                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+184-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
+184-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
+185            </intent-filter>
+186        </service>
+187        <service
+187-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+188            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+188-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+189            android:exported="false" >
+189-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+190            <meta-data
+190-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+191                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+191-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+192                android:value="cct" />
+192-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+193        </service>
+194
+195        <provider
+195-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+196            android:name="com.google.firebase.provider.FirebaseInitProvider"
+196-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+197            android:authorities="com.example.befitgroupproject.firebaseinitprovider"
+197-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+198            android:directBootAware="true"
+198-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+199            android:exported="false"
+199-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+200            android:initOrder="100" />
+200-->[com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+201
+202        <activity
+202-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+203            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+203-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+204            android:exported="false"
+204-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+205            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+205-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+206
+207        <receiver
+207-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:29:9-33:20
+208            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+208-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:30:13-85
+209            android:enabled="true"
+209-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:31:13-35
+210            android:exported="false" >
+210-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:32:13-37
+211        </receiver>
+212
+213        <service
+213-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:35:9-38:40
+214            android:name="com.google.android.gms.measurement.AppMeasurementService"
+214-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:36:13-84
+215            android:enabled="true"
+215-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:37:13-35
+216            android:exported="false" />
+216-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:38:13-37
+217        <service
+217-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:39:9-43:72
+218            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+218-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:40:13-87
+219            android:enabled="true"
+219-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:41:13-35
+220            android:exported="false"
+220-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:42:13-37
+221            android:permission="android.permission.BIND_JOB_SERVICE" />
+221-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:43:13-69
+222
+223        <meta-data
+223-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+224            android:name="com.google.android.gms.version"
+224-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+225            android:value="@integer/google_play_services_version" />
+225-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+226
+227        <provider
+227-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+228            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+228-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+229            android:authorities="com.example.befitgroupproject.lifecycle-process"
+229-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+230            android:exported="false"
+230-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+231            android:multiprocess="true" />
+231-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+232
+233        <service
+233-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+234            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+234-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+235            android:exported="false"
+235-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+236            android:permission="android.permission.BIND_JOB_SERVICE" >
+236-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+237        </service>
+238
+239        <receiver
+239-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+240            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+240-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+241            android:exported="false" />
+241-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+242    </application>
+243
+244</manifest>

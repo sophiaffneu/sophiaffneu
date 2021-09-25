@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                       
+                                                               
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:tag="layout/activity_fitness_test_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="378dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="300dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonRunInfo"
+                android:layout_width="39dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="25dp"
+                app:tint="#DF8E17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+            <ImageView
+                android:id="@+id/imageViewRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <EditText
+                android:id="@+id/editTextTextRun"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="@string/running"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewRun"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/runtest"
+                android:text="@string/runtest"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="376dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="196dp"
+            android:backgroundTint="#F8EDE0"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonPushup"
+                android:layout_width="39dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="25dp"
+                app:tint="#DF8E17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+            <ImageView
+                android:id="@+id/imageViewPushup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="305dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="@string/numberofPushUP"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewPushup"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Height"
+                android:text="@string/Pushup"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="377dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#F8EDE0"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+
+            <EditText
+                android:id="@+id/editTextBMI2"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:hint="@string/Weight"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBMIinfo"
+                android:layout_width="39dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_info_details"
+                app:tint="#DF8E17" />
+
+            <ImageView
+                android:id="@+id/imageViewCaculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <EditText
+                android:id="@+id/editTextBMI"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:hint="@string/height"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView2Height"
+                android:layout_width="93dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Height"
+                android:text="@string/BMI"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonPhysicalProfile"
+            android:layout_width="189dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="60dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="#F8EDE0"
+            android:text="@string/FitnesstestHistory"
+            android:textAllCaps="false"
+            android:textColorHint="#756A6A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.638" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="375dp"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="11dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#B87C68"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_baseline_directions_run_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonHeart2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonLaunch2"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBadge2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickBadge"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_baseline_group_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSetting2"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="34dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="#C88464"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/getplan"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDetail"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.24" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="378dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="96dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonCore"
+                android:layout_width="39dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_info_details"
+                app:tint="#DF8E17" />
+
+            <ImageView
+                android:id="@+id/imageViewCore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <EditText
+                android:id="@+id/editTextCore"
+                android:layout_width="197dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="@string/Completion"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewCore"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Height"
+                android:text="@string/core"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03892944" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="394dp" />
+
+        <TextView
+            android:id="@+id/textViewDetail"
+            android:layout_width="373dp"
+            android:layout_height="435dp"
+            android:background="#FFF280"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="textStart"
+            android:translationZ="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="42dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#BC9213"
+            android:translationZ="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="69dp"
+            android:layout_height="65dp"
+            android:paddingTop="15dp"
+            android:background="#C88464"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPhysicalProfile"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.603" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

@@ -1,0 +1,806 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+MERGED from [androidx.databinding:databinding-adapters:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\991aad63ed8beda19300543ef0f85b84\transformed\databinding-adapters-7.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:databinding-runtime:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\409ff78f14f2de3c166139aafeac8343\transformed\databinding-runtime-7.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\fang fang\.gradle\caches\transforms-3\519dfdc06ca5302663403b0b1c09ad97\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\fang fang\.gradle\caches\transforms-3\3b6ff7d93bf378fab15cb5d91404a1e2\transformed\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\8e420242a66fba3694c320e3c7d45ea1\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\545499d83561f970978988ce480c23ba\transformed\firebase-analytics-19.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\c9479efa2ff238f38772638029e63baa\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\451a339f9d7b85ee9761c9ed0292dc01\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] C:\Users\fang fang\.gradle\caches\transforms-3\b4d46fc1bd62c40061ed95432479019b\transformed\firebase-appcheck-interop-16.0.0-beta02\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\11108c40f6b4b45114902fb5915eea42\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\4c85c356f92b73b2caf8ebde0606e00e\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bbd0db670b9e967ac2d81e2396acc52e\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6a8526c0a916dd9f10beea66e0647d2e\transformed\firebase-database-collection-18.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\38f10a2392c1ceafc990689ca416b838\transformed\play-services-measurement-sdk-19.0.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\9f6733b0c4b609a882c1c324613f0567\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ecfa95db6c90456b9c3d62be6e40af85\transformed\firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\70f1ac1e1cf7e522e65d353bbb165c3f\transformed\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\17fc3d0cd62ae72a55e8f1c81af67290\transformed\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cc80685d731bda696262ba37c4571488\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\29fd653f8e9396b4657db500a602a404\transformed\play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\66a5efe3dcc26bd6bc1f33c8e0295dd2\transformed\play-services-measurement-base-19.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\fang fang\.gradle\caches\transforms-3\31810d3f207cf40ffc60a43ba3fe4e02\transformed\fragment-1.3.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\fang fang\.gradle\caches\transforms-3\5eacab1b28c6d42e8a51d829550b2e4c\transformed\activity-1.2.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\fang fang\.gradle\caches\transforms-3\a5aa4f6c9ab7c2ccc7ec57b05ec0ed8b\transformed\appcompat-resources-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b27bb07903eaf3cd5f3a3227bb279aad\transformed\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\3204680fb4b944995355cb67e2d4416a\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6677abf4b9f59fe19070d1e82b772f47\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\429829a900074ab331793515e7b0d630\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\366d65d445297f8fde8f73cd755ab914\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\06e956728079b62473f9071c0ed43744\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\fdd32f901d4bb1d5d33bddeb84a905c7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\29de5575f9927728f2259ca80dea1987\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\5b6087d2a888dc8cd66652dafdfd98d8\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\dbc66d810aadfcbae204aa9f2c96beac\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\2f7c01c10d3d7134859f80fe1123d2f3\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b00d5cc1ee2b8898b26695c875041071\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\dbe6632ea1830f7b528d4645a38df2bc\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bd33b12c49278f934d4edec5459af236\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\179bb343f7a6cb4f265a076d12a07093\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0d6128869f3f5054df81b46d7aeb5c68\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fang fang\.gradle\caches\transforms-3\c11d12a2baf277b837d8806c6f87fc44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.databinding:viewbinding:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\890ead7a225e8e8adbabf1126908806d\transformed\viewbinding-7.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\98be0e8aad7a9b4bb46a90f56788ba8e\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\dc586ffb92118e9bf45ac9249032d001\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\048a965a9baba68ce9534c35414bd90c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\a99a6a3ef3fca7f75c17b47439ee7e66\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\90d7d96226831d3e0023a5953d8ff3fd\transformed\savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\83ef5a2163392347fc8488b35f811353\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\73024ad51a4df5238a90a9d634a365dd\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd74e86cd0fe077f16c65cf8f486f9f4\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\d2e0dab81ac4ce61a6a5b8e8d3d5f158\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fc344dd16f2c32b18557242fa2f903e\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\11a446e7d11d9332c5acc6192805398e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\5ef5de6b86aba927bed289e100b66e4d\transformed\firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0d636a9f94fed20e13b794832063cd24\transformed\transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\e8ef85e514fc42cbbad75b9b3a8e6cfc\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\d29c7a8a10622f03cba94cde485782f1\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\607ff11b516ddc96487249f810d47dc2\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\e0704842989cea6c82cf2a91963d9437\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bcde78bc88dd626eb99fc345b357b7d4\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0e4fe9ac0069942711d5424f8db25fa9\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\fang fang\.gradle\caches\transforms-3\209013ccce9f4844e6ae6768b87dfdab\transformed\grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+	package
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:1-76:12
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:5:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:5:22-65
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:6:22-62
+uses-feature#android.hardware.camera
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:8:5-60
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:8:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:9:5-70
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:9:19-67
+application
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:11:5-74:19
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\fang fang\.gradle\caches\transforms-3\519dfdc06ca5302663403b0b1c09ad97\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\fang fang\.gradle\caches\transforms-3\519dfdc06ca5302663403b0b1c09ad97\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\8e420242a66fba3694c320e3c7d45ea1\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\8e420242a66fba3694c320e3c7d45ea1\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\545499d83561f970978988ce480c23ba\transformed\firebase-analytics-19.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\545499d83561f970978988ce480c23ba\transformed\firebase-analytics-19.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\451a339f9d7b85ee9761c9ed0292dc01\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\451a339f9d7b85ee9761c9ed0292dc01\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] C:\Users\fang fang\.gradle\caches\transforms-3\b4d46fc1bd62c40061ed95432479019b\transformed\firebase-appcheck-interop-16.0.0-beta02\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] C:\Users\fang fang\.gradle\caches\transforms-3\b4d46fc1bd62c40061ed95432479019b\transformed\firebase-appcheck-interop-16.0.0-beta02\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bbd0db670b9e967ac2d81e2396acc52e\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bbd0db670b9e967ac2d81e2396acc52e\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\38f10a2392c1ceafc990689ca416b838\transformed\play-services-measurement-sdk-19.0.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\38f10a2392c1ceafc990689ca416b838\transformed\play-services-measurement-sdk-19.0.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\9f6733b0c4b609a882c1c324613f0567\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\9f6733b0c4b609a882c1c324613f0567\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\70f1ac1e1cf7e522e65d353bbb165c3f\transformed\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\70f1ac1e1cf7e522e65d353bbb165c3f\transformed\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\17fc3d0cd62ae72a55e8f1c81af67290\transformed\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\17fc3d0cd62ae72a55e8f1c81af67290\transformed\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cc80685d731bda696262ba37c4571488\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cc80685d731bda696262ba37c4571488\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\29fd653f8e9396b4657db500a602a404\transformed\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\29fd653f8e9396b4657db500a602a404\transformed\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\66a5efe3dcc26bd6bc1f33c8e0295dd2\transformed\play-services-measurement-base-19.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\66a5efe3dcc26bd6bc1f33c8e0295dd2\transformed\play-services-measurement-base-19.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fang fang\.gradle\caches\transforms-3\c11d12a2baf277b837d8806c6f87fc44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fang fang\.gradle\caches\transforms-3\c11d12a2baf277b837d8806c6f87fc44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:15:9-54
+	android:icon
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:17:9-55
+activity#com.example.befitgroupproject.display_otherplans
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:18:9-22:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:22:13-49
+	android:exported
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:21:13-36
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:20:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:19:13-47
+activity#com.example.befitgroupproject.PunchCardActivity
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:23:9-27:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:27:13-49
+	android:exported
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:26:13-36
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:25:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:24:13-46
+activity#com.example.befitgroupproject.other_plans
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:28:9-32:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:32:13-49
+	android:exported
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:31:13-36
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:30:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:29:13-40
+activity#com.example.befitgroupproject.LaunchActivity
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:33:9-37:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:37:13-49
+	android:exported
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:36:13-36
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:35:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:34:13-43
+activity#com.example.befitgroupproject.SettingActivity
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:38:9-42:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:42:13-49
+	android:exported
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:41:13-36
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:39:13-44
+activity#com.example.befitgroupproject.HeartRateActivity
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:43:9-47:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:47:13-49
+	android:exported
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:46:13-36
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:45:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:44:13-46
+activity#com.example.befitgroupproject.get_plan
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:48:9-51:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:51:13-49
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:50:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:49:13-37
+activity#com.example.befitgroupproject.fitness_test_detail
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:52:9-55:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:55:13-49
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:54:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:53:13-48
+activity#com.example.befitgroupproject.fitness_test_history
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:56:9-59:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:59:13-49
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:58:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:57:13-49
+activity#com.example.befitgroupproject.MainActivity
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:60:9-69:20
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:63:13-49
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:62:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:61:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:64:13-68:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:65:17-69
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:65:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:67:17-77
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:67:27-74
+activity#com.example.befitgroupproject.BadgeActivity
+ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:70:9-73:52
+	android:screenOrientation
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:73:13-49
+	android:configChanges
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:72:13-48
+	android:name
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml:71:13-42
+uses-sdk
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\991aad63ed8beda19300543ef0f85b84\transformed\databinding-adapters-7.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-adapters:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\991aad63ed8beda19300543ef0f85b84\transformed\databinding-adapters-7.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\409ff78f14f2de3c166139aafeac8343\transformed\databinding-runtime-7.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\409ff78f14f2de3c166139aafeac8343\transformed\databinding-runtime-7.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\fang fang\.gradle\caches\transforms-3\519dfdc06ca5302663403b0b1c09ad97\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\fang fang\.gradle\caches\transforms-3\519dfdc06ca5302663403b0b1c09ad97\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\fang fang\.gradle\caches\transforms-3\3b6ff7d93bf378fab15cb5d91404a1e2\transformed\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\fang fang\.gradle\caches\transforms-3\3b6ff7d93bf378fab15cb5d91404a1e2\transformed\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\8e420242a66fba3694c320e3c7d45ea1\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\8e420242a66fba3694c320e3c7d45ea1\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\545499d83561f970978988ce480c23ba\transformed\firebase-analytics-19.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\545499d83561f970978988ce480c23ba\transformed\firebase-analytics-19.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\c9479efa2ff238f38772638029e63baa\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\c9479efa2ff238f38772638029e63baa\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\451a339f9d7b85ee9761c9ed0292dc01\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\451a339f9d7b85ee9761c9ed0292dc01\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] C:\Users\fang fang\.gradle\caches\transforms-3\b4d46fc1bd62c40061ed95432479019b\transformed\firebase-appcheck-interop-16.0.0-beta02\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] C:\Users\fang fang\.gradle\caches\transforms-3\b4d46fc1bd62c40061ed95432479019b\transformed\firebase-appcheck-interop-16.0.0-beta02\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\11108c40f6b4b45114902fb5915eea42\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\11108c40f6b4b45114902fb5915eea42\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\4c85c356f92b73b2caf8ebde0606e00e\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\fang fang\.gradle\caches\transforms-3\4c85c356f92b73b2caf8ebde0606e00e\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bbd0db670b9e967ac2d81e2396acc52e\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bbd0db670b9e967ac2d81e2396acc52e\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6a8526c0a916dd9f10beea66e0647d2e\transformed\firebase-database-collection-18.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6a8526c0a916dd9f10beea66e0647d2e\transformed\firebase-database-collection-18.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\38f10a2392c1ceafc990689ca416b838\transformed\play-services-measurement-sdk-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\38f10a2392c1ceafc990689ca416b838\transformed\play-services-measurement-sdk-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\9f6733b0c4b609a882c1c324613f0567\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\9f6733b0c4b609a882c1c324613f0567\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ecfa95db6c90456b9c3d62be6e40af85\transformed\firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ecfa95db6c90456b9c3d62be6e40af85\transformed\firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\70f1ac1e1cf7e522e65d353bbb165c3f\transformed\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\70f1ac1e1cf7e522e65d353bbb165c3f\transformed\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\17fc3d0cd62ae72a55e8f1c81af67290\transformed\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\17fc3d0cd62ae72a55e8f1c81af67290\transformed\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cc80685d731bda696262ba37c4571488\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cc80685d731bda696262ba37c4571488\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\29fd653f8e9396b4657db500a602a404\transformed\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\29fd653f8e9396b4657db500a602a404\transformed\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\66a5efe3dcc26bd6bc1f33c8e0295dd2\transformed\play-services-measurement-base-19.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\66a5efe3dcc26bd6bc1f33c8e0295dd2\transformed\play-services-measurement-base-19.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\fang fang\.gradle\caches\transforms-3\31810d3f207cf40ffc60a43ba3fe4e02\transformed\fragment-1.3.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\fang fang\.gradle\caches\transforms-3\31810d3f207cf40ffc60a43ba3fe4e02\transformed\fragment-1.3.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\fang fang\.gradle\caches\transforms-3\5eacab1b28c6d42e8a51d829550b2e4c\transformed\activity-1.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\fang fang\.gradle\caches\transforms-3\5eacab1b28c6d42e8a51d829550b2e4c\transformed\activity-1.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\fang fang\.gradle\caches\transforms-3\a5aa4f6c9ab7c2ccc7ec57b05ec0ed8b\transformed\appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\fang fang\.gradle\caches\transforms-3\a5aa4f6c9ab7c2ccc7ec57b05ec0ed8b\transformed\appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b27bb07903eaf3cd5f3a3227bb279aad\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b27bb07903eaf3cd5f3a3227bb279aad\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\3204680fb4b944995355cb67e2d4416a\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\3204680fb4b944995355cb67e2d4416a\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6677abf4b9f59fe19070d1e82b772f47\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6677abf4b9f59fe19070d1e82b772f47\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\429829a900074ab331793515e7b0d630\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\429829a900074ab331793515e7b0d630\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\366d65d445297f8fde8f73cd755ab914\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\366d65d445297f8fde8f73cd755ab914\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\06e956728079b62473f9071c0ed43744\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\06e956728079b62473f9071c0ed43744\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\fdd32f901d4bb1d5d33bddeb84a905c7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\fdd32f901d4bb1d5d33bddeb84a905c7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\29de5575f9927728f2259ca80dea1987\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\29de5575f9927728f2259ca80dea1987\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\5b6087d2a888dc8cd66652dafdfd98d8\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\5b6087d2a888dc8cd66652dafdfd98d8\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\dbc66d810aadfcbae204aa9f2c96beac\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\dbc66d810aadfcbae204aa9f2c96beac\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\2f7c01c10d3d7134859f80fe1123d2f3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\2f7c01c10d3d7134859f80fe1123d2f3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b00d5cc1ee2b8898b26695c875041071\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b00d5cc1ee2b8898b26695c875041071\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\dbe6632ea1830f7b528d4645a38df2bc\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\dbe6632ea1830f7b528d4645a38df2bc\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bd33b12c49278f934d4edec5459af236\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bd33b12c49278f934d4edec5459af236\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\179bb343f7a6cb4f265a076d12a07093\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\179bb343f7a6cb4f265a076d12a07093\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0d6128869f3f5054df81b46d7aeb5c68\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0d6128869f3f5054df81b46d7aeb5c68\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\fang fang\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fang fang\.gradle\caches\transforms-3\c11d12a2baf277b837d8806c6f87fc44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fang fang\.gradle\caches\transforms-3\c11d12a2baf277b837d8806c6f87fc44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\890ead7a225e8e8adbabf1126908806d\transformed\viewbinding-7.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\890ead7a225e8e8adbabf1126908806d\transformed\viewbinding-7.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\98be0e8aad7a9b4bb46a90f56788ba8e\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\98be0e8aad7a9b4bb46a90f56788ba8e\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\dc586ffb92118e9bf45ac9249032d001\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\dc586ffb92118e9bf45ac9249032d001\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\048a965a9baba68ce9534c35414bd90c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\048a965a9baba68ce9534c35414bd90c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\a99a6a3ef3fca7f75c17b47439ee7e66\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\a99a6a3ef3fca7f75c17b47439ee7e66\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\90d7d96226831d3e0023a5953d8ff3fd\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\90d7d96226831d3e0023a5953d8ff3fd\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\83ef5a2163392347fc8488b35f811353\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\83ef5a2163392347fc8488b35f811353\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\73024ad51a4df5238a90a9d634a365dd\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\73024ad51a4df5238a90a9d634a365dd\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd74e86cd0fe077f16c65cf8f486f9f4\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd74e86cd0fe077f16c65cf8f486f9f4\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\d2e0dab81ac4ce61a6a5b8e8d3d5f158\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\fang fang\.gradle\caches\transforms-3\d2e0dab81ac4ce61a6a5b8e8d3d5f158\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fc344dd16f2c32b18557242fa2f903e\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fc344dd16f2c32b18557242fa2f903e\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\11a446e7d11d9332c5acc6192805398e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\11a446e7d11d9332c5acc6192805398e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\5ef5de6b86aba927bed289e100b66e4d\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\5ef5de6b86aba927bed289e100b66e4d\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0d636a9f94fed20e13b794832063cd24\transformed\transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0d636a9f94fed20e13b794832063cd24\transformed\transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\e8ef85e514fc42cbbad75b9b3a8e6cfc\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\e8ef85e514fc42cbbad75b9b3a8e6cfc\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\d29c7a8a10622f03cba94cde485782f1\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\d29c7a8a10622f03cba94cde485782f1\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\607ff11b516ddc96487249f810d47dc2\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\607ff11b516ddc96487249f810d47dc2\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\e0704842989cea6c82cf2a91963d9437\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\e0704842989cea6c82cf2a91963d9437\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bcde78bc88dd626eb99fc345b357b7d4\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\bcde78bc88dd626eb99fc345b357b7d4\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0e4fe9ac0069942711d5424f8db25fa9\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\0e4fe9ac0069942711d5424f8db25fa9\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\fang fang\.gradle\caches\transforms-3\209013ccce9f4844e6ae6768b87dfdab\transformed\grpc-android-1.28.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\fang fang\.gradle\caches\transforms-3\209013ccce9f4844e6ae6768b87dfdab\transformed\grpc-android-1.28.0\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fang fang\Desktop\neu\cs 5520 phone app\5520-group-befit\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\fang fang\.gradle\caches\transforms-3\209013ccce9f4844e6ae6768b87dfdab\transformed\grpc-android-1.28.0\AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\fang fang\.gradle\caches\transforms-3\209013ccce9f4844e6ae6768b87dfdab\transformed\grpc-android-1.28.0\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\d31ded6ce607cf7e09e61e22c2ac9464\transformed\play-services-measurement-sdk-api-19.0.1\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:26:22-64
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:31:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.0.2] C:\Users\fang fang\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\firebase-database-20.0.2\AndroidManifest.xml:33:17-109
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+service#com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+	android:enabled
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+intent-filter#action:name:com.google.firebase.auth.api.gms.service.START+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+action#com.google.firebase.auth.api.gms.service.START
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\99e33d49eb6cb3c8d9236007e84fbe53\transformed\firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:23.0.3] C:\Users\fang fang\.gradle\caches\transforms-3\102caa0d94ccbe26b4cedde9ed1ba31c\transformed\firebase-firestore-23.0.3\AndroidManifest.xml:21:17-111
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b40d675db1d8c4f3d4c27b6c92ca64e7\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\6e2911ff4a96486920a1a70539b6e472\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\cda381e6d581a21f8ef1d05d72493df3\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\b9467e55791a83d5eda643e07853109f\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\feaade1a728008bc2075a730969adb4f\transformed\play-services-measurement-api-19.0.1\AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\18c0e629690351d48432cfb385b45491\transformed\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\eb40fd53891030d51c54eb9548629421\transformed\play-services-measurement-impl-19.0.1\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] C:\Users\fang fang\.gradle\caches\transforms-3\1d4c5290a3226b8c0a572f3caab4a1f7\transformed\play-services-measurement-19.0.1\AndroidManifest.xml:40:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\fang fang\.gradle\caches\transforms-3\dd899772f6be5434b73cf178284bcfa8\transformed\play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\fang fang\.gradle\caches\transforms-3\9e9716a6b5a53826b5dfb8872c142038\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\fang fang\.gradle\caches\transforms-3\4fb14725412ec96c9b39ddfab36c6dd0\transformed\transport-runtime-3.0.0\AndroidManifest.xml:33:13-132

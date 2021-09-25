@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">873554349520-po5dsrhgv32j5bus2rr7ffospmbaeenb.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">873554349520</string>
+    <string name="google_api_key" translatable="false">AIzaSyDEK_MwEFxj8a7BHHfmzYu5CrrejbTgNVU</string>
+    <string name="google_app_id" translatable="false">1:873554349520:android:493265b0f13da0f89bfdd5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDEK_MwEFxj8a7BHHfmzYu5CrrejbTgNVU</string>
+    <string name="google_storage_bucket" translatable="false">befit-9371b.appspot.com</string>
+    <string name="project_id" translatable="false">befit-9371b</string>
+</resources>

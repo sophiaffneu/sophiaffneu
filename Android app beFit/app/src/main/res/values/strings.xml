@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">BeFit group project</string>
+    <string name="weight">Weight</string>
+    <string name="Height">Height</string>
+    <string name="BMI">BMI Test</string>
+    <string name="core">Core strength and stability</string>
+    <string name="Pushup">Push-up Test</string>
+    <string name="runtest">12 minutes running test</string>
+    <string name="Completion">% of completion</string>
+    <string name="numberofPushUP">Number of Push-up in 30 seconds</string>
+    <string name="VO2max">VO2 max</string>
+
+    <string name="getplan">Test result and get plan</string>
+    <string name="AddPic">Add profile picture</string>
+    <string name="congrat">Congratulations on your completion of the fitness test, here is the result:</string>
+    <string name="preferences">Please select your work out preference:</string>
+    <string name="running">Miles you can run in 12 minutes</string>
+    <string name="getplanb">Get Plan</string>
+    <string name="bodypart">Focusing body part</string>
+    <string name="UpperBody">UpperBody</string>
+    <string name="LowerBody">LowerBody</string>
+    <string name="FullBody">FullBody</string>
+    <string name="WorkoutIntensity">Workout Intensity</string>
+    <string name="time">Time</string>
+    <string name="HighInten">High Intensity</string>
+    <string name="Mediumin">Medium Intensity</string>
+    <string name="LowIn">Low Intensity</string>
+    <string name="twenty">25 min</string>
+    <string name="thirty">35 min</string>
+    <string name="forty">45 min</string>
+    <string name="History">History</string>
+    <string name="FitnessTestHistory">Fitness Test History</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="login">login</string>
+    <string name="Birthday">Date of Birth(mm/dd/yyyy)</string>
+    <string name="Gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="height">Height(Inches)</string>
+    <string name="Weight">Weight (lbs)</string>
+    <string name="Name">Name</string>
+    <string name="FitnesstestHistory">Fitness Test History</string>
+    <string name="recent">(the most recent 5 test results)</string>
+
+    <string name="days">more days to your next badge</string>
+    <string name="month">MM</string>
+    <string name="year">YY</string>
+    <string name="submit">Submit</string>
+    <string name="collect">Collect!</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="Currentplan">Current work-out plan:</string>
+    <string name="otherplans">View other plans</string>
+    <string name="slogan">BeFit and Beyond!</string>
+    <string name="slogan2">Complete a tailor made 3-week plan, be strong and be fit!</string>
+    <string name="Punchcard">PunchCard</string>
+    <string name="Punch">Punch the punch card everytime when you excercise, earn badges and suprises!</string>
+    <string name="share">Share your progress with freinds and families!</string>
+    <string name="email">Email</string>
+    <string name="password">PassWord</string>
+    <string name="Register">REGISTER</string>
+
+
+</resources>
